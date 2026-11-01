@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Oct 29 20:01:52 2026
+# Process ID         : 31180
+# Current directory  : C:/Users/johna/ReedSolomon/vivado/FPGAFlow/sim/work
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/tb_engine_sim/xsim_script.tcl}
+# Log file           : C:/Users/johna/ReedSolomon/vivado/FPGAFlow/sim/work/xsim.log
+# Journal file       : C:/Users/johna/ReedSolomon/vivado/FPGAFlow/sim/work\xsim.jou
+# Running On         : John
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 34070 MB
+# Swap memory        : 53687 MB
+# Total Virtual      : 87757 MB
+# Available Virtual  : 26538 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_engine_sim/xsim_script.tcl
+# xsim {tb_engine_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+tb_engine: 2000 vectors, 0 mismatches, 163 predicted flips, 2063 cycles/inference
+PASS
+$finish called at time : 343900917852 ps : File "C:/Users/johna/ReedSolomon/vivado/FPGAFlow/sim/tb_engine.v" Line 71
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Oct 29 20:01:57 2026...

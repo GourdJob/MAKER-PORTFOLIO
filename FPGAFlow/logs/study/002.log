@@ -1,0 +1,23 @@
+$ python host/train.py --data data/d3_r3_p0.005.npz --model fp --hidden 64 64 --out-dir models/study --results results/study.jsonl --tag w64
+fp_d3_r3_p0.005_w64 epoch   1/20  loss 0.39126  val LER 0.038700
+fp_d3_r3_p0.005_w64 epoch   2/20  loss 0.07442  val LER 0.020120
+fp_d3_r3_p0.005_w64 epoch   3/20  loss 0.05704  val LER 0.018560
+fp_d3_r3_p0.005_w64 epoch   4/20  loss 0.05367  val LER 0.018000
+fp_d3_r3_p0.005_w64 epoch   5/20  loss 0.05215  val LER 0.017700
+fp_d3_r3_p0.005_w64 epoch   6/20  loss 0.05122  val LER 0.016980
+fp_d3_r3_p0.005_w64 epoch   7/20  loss 0.05040  val LER 0.017420
+fp_d3_r3_p0.005_w64 epoch   8/20  loss 0.04978  val LER 0.016840
+fp_d3_r3_p0.005_w64 epoch   9/20  loss 0.04926  val LER 0.016560
+fp_d3_r3_p0.005_w64 epoch  10/20  loss 0.04868  val LER 0.016620
+fp_d3_r3_p0.005_w64 epoch  11/20  loss 0.04842  val LER 0.016240
+fp_d3_r3_p0.005_w64 epoch  12/20  loss 0.04782  val LER 0.016560
+fp_d3_r3_p0.005_w64 epoch  13/20  loss 0.04741  val LER 0.016060
+fp_d3_r3_p0.005_w64 epoch  14/20  loss 0.04699  val LER 0.016160
+fp_d3_r3_p0.005_w64 epoch  15/20  loss 0.04665  val LER 0.015800
+fp_d3_r3_p0.005_w64 epoch  16/20  loss 0.04625  val LER 0.016180
+fp_d3_r3_p0.005_w64 epoch  17/20  loss 0.04594  val LER 0.015960
+fp_d3_r3_p0.005_w64 epoch  18/20  loss 0.04569  val LER 0.015880
+fp_d3_r3_p0.005_w64 epoch  19/20  loss 0.04551  val LER 0.016060
+fp_d3_r3_p0.005_w64 epoch  20/20  loss 0.04542  val LER 0.016040
+
+fp_d3_r3_p0.005_w64: test LER 0.016442 +- 0.000127  (PyMatching 0.017178, best epoch 15, 10.8s)

@@ -1,0 +1,22 @@
+# Pilot: training recipe for the plain BNN (128x128, p=0.005).
+# Baseline already measured: 1M shots, 60 epochs, lr 3e-3 -> LER 0.0300 (3 seeds, 0.0272-0.0331)
+# Questions: more steps? more data? lower LR? Does a 10M-shot teacher get better?
+
+# teachers on 10M shots
+python host/train.py --data data/10m/d3_r3_p0.005.npz --model fp --out-dir models/10m --tag d10m --results results/pilot.jsonl
+python host/train.py --data data/10m/d3_r3_p0.005.npz --model fp --epochs 40 --out-dir models/10m --tag d10m_e40 --results results/pilot.jsonl
+# B: 1M shots, 200 epochs (more steps, same data)
+python host/train.py --data data/d3_r3_p0.005.npz --model bnn --epochs 200 --out-dir models/pilot --teacher models/fp_d3_r3_p0.005.pt --tag d1m_e200 --results results/pilot.jsonl
+python host/train.py --data data/d3_r3_p0.005.npz --model bnn --epochs 200 --out-dir models/pilot --teacher models/fp_d3_r3_p0.005.pt --tag d1m_e200 --seed 1 --results results/pilot.jsonl
+WAIT
+# C: 10M shots, 6 epochs (same steps as baseline, 10x data)
+python host/train.py --data data/10m/d3_r3_p0.005.npz --model bnn --epochs 6 --out-dir models/pilot --teacher models/10m/fp_d3_r3_p0.005_d10m.pt --tag d10m_e6 --results results/pilot.jsonl
+python host/train.py --data data/10m/d3_r3_p0.005.npz --model bnn --epochs 6 --out-dir models/pilot --teacher models/10m/fp_d3_r3_p0.005_d10m.pt --tag d10m_e6 --seed 1 --results results/pilot.jsonl
+# D: 10M shots, 20 epochs
+python host/train.py --data data/10m/d3_r3_p0.005.npz --model bnn --epochs 20 --out-dir models/pilot --teacher models/10m/fp_d3_r3_p0.005_d10m.pt --tag d10m_e20 --results results/pilot.jsonl
+python host/train.py --data data/10m/d3_r3_p0.005.npz --model bnn --epochs 20 --out-dir models/pilot --teacher models/10m/fp_d3_r3_p0.005_d10m.pt --tag d10m_e20 --seed 1 --results results/pilot.jsonl
+# E: 10M shots, 20 epochs, lr 1e-3
+python host/train.py --data data/10m/d3_r3_p0.005.npz --model bnn --epochs 20 --lr 1e-3 --out-dir models/pilot --teacher models/10m/fp_d3_r3_p0.005_d10m.pt --tag d10m_e20_lr1e-3 --results results/pilot.jsonl
+python host/train.py --data data/10m/d3_r3_p0.005.npz --model bnn --epochs 20 --lr 1e-3 --out-dir models/pilot --teacher models/10m/fp_d3_r3_p0.005_d10m.pt --tag d10m_e20_lr1e-3 --seed 1 --results results/pilot.jsonl
+# F: 10M shots, 40 epochs
+python host/train.py --data data/10m/d3_r3_p0.005.npz --model bnn --epochs 40 --out-dir models/pilot --teacher models/10m/fp_d3_r3_p0.005_d10m.pt --tag d10m_e40 --results results/pilot.jsonl

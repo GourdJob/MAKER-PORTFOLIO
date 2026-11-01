@@ -1,0 +1,10 @@
+{
+  "model": "build\\nexp_d3_r3_p0.005_n12_awq_uniform_seed3",
+  "shots": 1000000,
+  "mismatches_vs_golden": 0,
+  "bad_replies": 0,
+  "fpga_ler": 0.022238,
+  "golden_ler": 0.022238,
+  "pymatching_ler": 0.017178,
+  "shots_per_s": 2556
+}

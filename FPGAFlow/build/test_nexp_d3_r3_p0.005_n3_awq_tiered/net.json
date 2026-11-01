@@ -1,0 +1,28 @@
+{
+  "checkpoint": "models\\nexp\\nexp_d3_r3_p0.005_n3_awq_tiered.pt",
+  "data": "data\\d3_r3_p0.005.npz",
+  "golden_test_ler": 0.027076,
+  "pytorch_test_ler": 0.027076,
+  "golden_vs_pytorch_mismatches": 0,
+  "test_shots": 1000000,
+  "n_layers": 3,
+  "n_neurons": 268,
+  "n_planes": 294,
+  "layer_sizes": [
+    [
+      24,
+      139
+    ],
+    [
+      139,
+      128
+    ],
+    [
+      128,
+      1
+    ]
+  ],
+  "load_bytes": 23294,
+  "n_vectors": 500,
+  "maxw": 256
+}

@@ -1,0 +1,52 @@
+{
+  "d": 3,
+  "rounds": 3,
+  "noise": "uniform circuit-level depolarizing",
+  "seed": 1234,
+  "results": [
+    {
+      "p": 0.001,
+      "file": "d3_r3_p0.001.npz",
+      "num_detectors": 24,
+      "num_observables": 1,
+      "test_shots": 1000000,
+      "observable_flip_rate": 0.022693,
+      "trivial_ler": 0.022693,
+      "pymatching_ler": 0.000743,
+      "pymatching_errors": 743
+    },
+    {
+      "p": 0.003,
+      "file": "d3_r3_p0.003.npz",
+      "num_detectors": 24,
+      "num_observables": 1,
+      "test_shots": 1000000,
+      "observable_flip_rate": 0.065017,
+      "trivial_ler": 0.065017,
+      "pymatching_ler": 0.006601,
+      "pymatching_errors": 6601
+    },
+    {
+      "p": 0.005,
+      "file": "d3_r3_p0.005.npz",
+      "num_detectors": 24,
+      "num_observables": 1,
+      "test_shots": 1000000,
+      "observable_flip_rate": 0.104175,
+      "trivial_ler": 0.104175,
+      "pymatching_ler": 0.017178,
+      "pymatching_errors": 17178
+    },
+    {
+      "p": 0.01,
+      "file": "d3_r3_p0.01.npz",
+      "num_detectors": 24,
+      "num_observables": 1,
+      "test_shots": 1000000,
+      "observable_flip_rate": 0.187257,
+      "trivial_ler": 0.187257,
+      "pymatching_ler": 0.059435,
+      "pymatching_errors": 59435
+    }
+  ]
+}

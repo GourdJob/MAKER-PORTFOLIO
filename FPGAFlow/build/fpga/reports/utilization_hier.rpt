@@ -1,0 +1,32 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Thu Oct 29 20:05:18 2026
+| Host         : John running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file C:/Users/johna/ReedSolomon/vivado/FPGAFlow/build/fpga/reports/utilization_hier.rpt
+| Design       : top
+| Device       : xc7s25csga225-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------+------------+------------+------------+---------+------+------+--------+--------+------------+
+| Instance |   Module   | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++----------+------------+------------+------------+---------+------+------+--------+--------+------------+
+| top      |      (top) |       1535 |       1501 |      34 |    0 | 2254 |     15 |      1 |          0 |
+|   (top)  |      (top) |          9 |          9 |       0 |    0 |   33 |      0 |      0 |          0 |
+|   u_cmd  | cmd_parser |        209 |        193 |      16 |    0 | 1539 |      0 |      0 |          0 |
+|   u_eng  | bnn_engine |       1266 |       1248 |      18 |    0 |  636 |     15 |      1 |          0 |
++----------+------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

@@ -1,0 +1,449 @@
+<title>RS(8,4) Display Wiring</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600;700&display=swap">
+<style>
+/* Layout: one printable column, bench-sheet style — schematic first, then part pinouts, then checkable wire lists and steps. */
+:root {
+  --paper: #f5f7f6; --panel: #ffffff; --chip: #e9eef0; --ink: #17212b; --muted: #5a6670; --rule: #cdd4d8;
+  --seg: #c2410c; --dig: #1d5fbf; --warn: #b42318; --accent: #1f6b4f; --warnbg: #fdecea;
+  --display: "Archivo", "Arial Narrow", Arial, sans-serif;
+  --body: "Atkinson Hyperlegible", "Segoe UI", Verdana, sans-serif;
+  --mono: "JetBrains Mono", Consolas, "Courier New", monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #10161b; --panel: #172027; --chip: #1e2a33; --ink: #e3e9ec; --muted: #9aa7b0; --rule: #2d3a44;
+    --seg: #f2894a; --dig: #72a9ff; --warn: #ff8476; --accent: #5cc49a; --warnbg: #3a1c1a; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #10161b; --panel: #172027; --chip: #1e2a33; --ink: #e3e9ec; --muted: #9aa7b0; --rule: #2d3a44;
+  --seg: #f2894a; --dig: #72a9ff; --warn: #ff8476; --accent: #5cc49a; --warnbg: #3a1c1a; color-scheme: dark;
+}
+@media print {
+  html:root:not(#print) {
+    --paper: #ffffff; --panel: #ffffff; --chip: #eef2f3; --ink: #111111; --muted: #4a545c; --rule: #b9c1c6;
+    --seg: #c2410c; --dig: #1d5fbf; --warn: #b42318; --accent: #1f6b4f; --warnbg: #fdecea; color-scheme: light;
+  }
+  @page { size: letter; margin: 11mm; }
+  body { font-size: 10.5pt; }
+  .sheet { padding: 0 !important; max-width: none; gap: 18px !important; }
+  figure, table, .step, .callout, .parts > figure { break-inside: avoid; }
+  h2 { break-after: avoid; }
+  .pagebreak { break-before: page; }
+  .scroll { overflow: visible !important; }
+  .scroll svg, .scroll table { min-width: 0 !important; }
+}
+* { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.5; }
+.sheet { max-width: 1000px; margin: 0 auto; padding-block: 28px 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 28px; }
+header { display: grid; gap: 10px; border-bottom: 3px solid var(--ink); padding-bottom: 14px; }
+.eyebrow { font: 600 12px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+h1 { font: 800 clamp(28px, 5vw, 40px)/1.05 var(--display); margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+h2 { font: 800 21px/1.2 var(--display); margin: 0; text-wrap: balance; }
+h3 { font: 700 16px/1.3 var(--body); margin: 0; }
+p { margin: 0; max-width: 72ch; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 22px; font: 13px var(--mono); color: var(--muted); }
+.meta b { color: var(--ink); font-weight: 600; }
+section { display: grid; gap: 12px; min-width: 0; }
+.callout { border: 2px solid var(--warn); background: var(--warnbg); border-radius: 6px; padding: 12px 14px; display: grid; gap: 6px; }
+.callout h3 { color: var(--warn); }
+.callout ul { margin: 0; padding-left: 20px; }
+.callout li { margin: 2px 0; }
+figure { margin: 0; background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 14px; display: grid; gap: 10px; min-width: 0; align-content: start; }
+figcaption { font-size: 13px; color: var(--muted); }
+figcaption b { color: var(--ink); }
+.scroll { overflow-x: auto; }
+.scroll svg.wide { min-width: 760px; }
+svg { display: block; width: 100%; height: auto; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { display: inline-block; width: 22px; height: 0; border-top: 3px solid; }
+.legend i.bus { border-top-width: 7px; }
+.parts { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; background: var(--panel); }
+th, td { border: 1px solid var(--rule); padding: 6px 8px; text-align: left; vertical-align: middle; }
+th { font: 600 11px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); background: var(--chip); }
+td.mono, .mono { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+td.box, th.box { width: 34px; text-align: center; padding: 6px 4px; }
+td.box::before { content: ""; display: inline-block; width: 14px; height: 14px; border: 1.5px solid var(--ink); border-radius: 2px; vertical-align: -2px; }
+.seg { color: var(--seg); font-weight: 700; }
+.dig { color: var(--dig); font-weight: 700; }
+.warn { color: var(--warn); font-weight: 700; }
+code { font-family: var(--mono); font-size: .92em; background: var(--chip); padding: 1px 5px; border-radius: 3px; overflow-wrap: anywhere; }
+pre { font: 13px/1.5 var(--mono); background: var(--chip); padding: 10px 12px; border-radius: 4px; margin: 0; overflow-x: auto; white-space: pre; }
+.steps { display: grid; gap: 10px; counter-reset: step; }
+.step { display: grid; grid-template-columns: 34px 1fr; gap: 12px; background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 14px; }
+.step::before { counter-increment: step; content: counter(step); font: 800 20px/1 var(--display); color: var(--panel); background: var(--ink); width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; }
+.step > div { display: grid; gap: 6px; min-width: 0; }
+.usb { font: 600 11px var(--mono); letter-spacing: .06em; text-transform: uppercase; }
+.usb.off { color: var(--muted); }
+.usb.on { color: var(--accent); }
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+.two > * { min-width: 0; display: grid; gap: 10px; align-content: start; }
+footer { font-size: 12px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 10px; }
+
+/* SVG drawing */
+svg text { fill: var(--ink); font-family: var(--mono); }
+.w { stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.w.seg { stroke: var(--seg); } .w.dig { stroke: var(--dig); } .w.gnd { stroke: var(--ink); }
+.w.bus { stroke: var(--seg); stroke-width: 7; }
+.w.bar { stroke: var(--ink); stroke-width: 3.5; } .w.thin { stroke: var(--ink); stroke-width: 1.5; }
+.dot.gnd { fill: var(--ink); } .arrow { fill: var(--ink); }
+.term { fill: var(--panel); stroke: var(--dig); stroke-width: 1.5; }
+.qbody { fill: none; stroke: var(--ink); stroke-width: 1.5; }
+.chip { fill: var(--chip); stroke: var(--ink); stroke-width: 1.5; }
+.part { fill: var(--panel); stroke: var(--ink); stroke-width: 1.5; }
+.glyph { fill: var(--rule); }
+.glyph.on { fill: var(--seg); }
+.pad { fill: var(--muted); }
+.cell { fill: var(--panel); stroke: var(--ink); stroke-width: 1.2; }
+.cell.g { fill: var(--ink); }
+svg .t-pin { font-size: 11px; font-weight: 600; }
+svg .t-small { font-size: 10px; fill: var(--muted); }
+svg .t-grp { font-size: 10px; font-weight: 700; letter-spacing: .08em; fill: var(--muted); }
+svg .t-chip { font: 800 18px var(--display); }
+svg .t-part { font: 700 12px var(--body); }
+svg .t-seg { font-size: 11px; font-weight: 700; fill: var(--seg); }
+svg .t-dig { font-size: 11px; font-weight: 700; fill: var(--dig); }
+svg .t-q { font-size: 11px; font-weight: 700; }
+svg .t-warn { font-size: 10px; font-weight: 700; fill: var(--warn); }
+svg .t-bus { font-size: 12px; font-weight: 700; fill: var(--seg); }
+</style>
+
+<main class="sheet">
+  <header>
+    <div class="eyebrow">Bench sheet · Reed–Solomon RS(8,4) on Cmod S7</div>
+    <h1>Seven-Segment Display Wiring</h1>
+    <div class="meta">
+      <span><b>Displays:</b> 8 × TD-7SGCC (1 digit, common cathode)</span>
+      <span><b>Drivers:</b> 8 × BC547B</span>
+      <span><b>Top:</b> rs_top (segments on DIP 41–48)</span>
+    </div>
+  </header>
+
+  <div class="callout">
+    <h3>Before you start</h3>
+    <ul>
+      <li>Unplug the USB cable whenever you move a wire.</li>
+      <li>Pull the Hamming-project LEDs out of <b>DIP pins 1–8 and 41–48</b>. Pins 1–8 drive the transistors and 41–48 the segments.</li>
+      <li><span class="warn">Never connect anything to DIP pin 24.</span> It is 5 V. Leave the Pmod connector empty.</li>
+      <li>Program the bitstream built <b>after</b> the segments moved to pins 41–48.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>Schematic</h2>
+    <figure>
+      <div class="scroll"><svg id="schem" class="wide" viewBox="0 0 1000 560" role="img" aria-label="Schematic: DIP pins 41 to 48 drive an 8-wire segment bus shared by all eight displays; DIP pins 1 to 8 drive transistors Q0 to Q7; each transistor's collector connects to one display's COM pin and its emitter to ground."></svg></div>
+      <div class="legend">
+        <span><i class="bus" style="border-color:var(--seg)"></i>Segment bus: 8 separate wires a–dp, shared by all 8 displays</span>
+        <span><i style="border-color:var(--dig)"></i>Digit select and COM</span>
+        <span><i style="border-color:var(--ink)"></i>Ground</span>
+      </div>
+      <figcaption>
+        <b>The thick orange line is 8 wires drawn as one.</b> Segment <i>a</i> of every display connects to DIP pin 41, segment <i>b</i> of every display to pin 42, and so on. The segment table below lists every connection.
+        Each display's <b>COM</b> pin (3 or 8, joined inside) goes only to its own transistor. The FPGA turns on one transistor at a time, grounding that display's COM so only it lights. It cycles through all 8 every 8 ms, so they all look on.
+        The board has a series resistor on every DIP pin, so no extra resistors are needed. “shows c7” and similar are labels for which codeword symbol appears there, not pins.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Part pinouts</h2>
+    <div class="parts">
+      <figure>
+        <svg id="p-disp" viewBox="0 0 260 260" role="img" aria-label="TD-7SGCC pinout, front view"></svg>
+        <figcaption><b>TD-7SGCC, front view</b>, decimal point at bottom right. Pins 1–5 run along the bottom left to right; 6–10 along the top right to left. <span class="dig">COM</span> = pins 3 and 8, joined inside, so use either one.</figcaption>
+      </figure>
+      <figure>
+        <svg id="p-tr" viewBox="0 0 200 200" role="img" aria-label="BC547B placed with the flat face away: legs E, B, C left to right"></svg>
+        <figcaption><b>BC547B, flat face pointing away from you</b>, legs down. Read left to right: E → GND rail · B → DIP pin 1–8 · C → that display's COM.</figcaption>
+      </figure>
+      <figure>
+        <svg id="p-dip" viewBox="0 0 280 480" role="img" aria-label="Cmod S7 DIP header: pins 1 to 8 drive the transistors, pins 41 to 48 drive the segments, pin 24 is 5 V, pin 25 is ground"></svg>
+        <figcaption><b>Cmod S7 DIP pins, top view.</b> Pins 1–24 run down one side and 25–48 back up the other, so pin 48 sits across from pin 1. Check the numbers printed on the board.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="pagebreak">
+    <h2>Segment wiring</h2>
+    <p>Each segment goes from its FPGA pin to display 1, then hops display 1 → 2 → 3 … → 8 on the <b>same pin number</b>. That makes 8 wires from the FPGA plus 56 hops between displays. Tick one box per wire.</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Seg</th><th>FPGA DIP pin</th><th>Display pin</th><th class="box">FPGA→1</th><th class="box">1→2</th><th class="box">2→3</th><th class="box">3→4</th><th class="box">4→5</th><th class="box">5→6</th><th class="box">6→7</th><th class="box">7→8</th></tr></thead>
+        <tbody id="t-seg"></tbody>
+      </table>
+    </div>
+    <p class="warn">Never connect COM pins (3 and 8) between displays.</p>
+  </section>
+
+  <section>
+    <h2>Transistor wiring</h2>
+    <div class="scroll">
+      <table>
+        <thead><tr><th class="box"></th><th>Transistor</th><th>B ← FPGA DIP pin</th><th>C → COM (pin 3 or 8) of</th><th>Shows</th><th>E →</th></tr></thead>
+        <tbody id="t-dig"></tbody>
+      </table>
+    </div>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td class="box"></td><td>Breadboard GND rail</td><td>← FPGA <b>DIP pin 25</b>. Link the top and bottom rails if you use both.</td></tr>
+          <tr><td></td><td class="warn">DIP pin 24</td><td class="warn">5 V. Leave it empty.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Build order</h2>
+    <div class="steps">
+      <div class="step"><div>
+        <h3>Place the parts</h3>
+        <span class="usb off">USB unplugged</span>
+        <p>Put displays 1–8 left to right across the center gap, decimal points toward you, with one empty column between neighbours. Eight displays fill most of a full-size breadboard, so put the transistors on a second breadboard if needed, with legs in separate columns. Run DIP pin 25 to the GND rail, and link the GND rails of both boards.</p>
+      </div></div>
+      <div class="step"><div>
+        <h3>Wire display 1 and Q0</h3>
+        <span class="usb off">USB unplugged</span>
+        <p>Run the 8 “FPGA→1” wires: DIP pins 41–48 to display 1. Wire Q0: E → GND, B ← DIP pin 1, C → display 1 COM.</p>
+      </div></div>
+      <div class="step"><div>
+        <h3>Test one digit</h3>
+        <span class="usb on">USB plugged in</span>
+        <p>Program <code>rs_top.bit</code> and press <b>BTN1</b>. The display must stay dark and LED3 must blink. If a segment lights before any message, a wire is on a power pin. Then send:</p>
+        <pre>cd C:\users\johna\ReedSolomon
+python tools\rs_host.py COM6 --hex 1234 --delay 4</pre>
+        <p>Display 1 should show <b>1</b>. Replace COM6 with your port.</p>
+      </div></div>
+      <div class="step"><div>
+        <h3>Add displays 2–4 and Q1–Q3</h3>
+        <span class="usb off">USB unplugged</span>
+        <p>Hop each segment 1→2, 2→3, 3→4 and wire Q1–Q3. Test again: displays 1–4 should show <b>1 2 3 4</b>.</p>
+      </div></div>
+      <div class="step"><div>
+        <h3>Add displays 5–8 and Q4–Q7</h3>
+        <span class="usb off">USB unplugged</span>
+        <p>Finish the hops to display 8 and wire Q4–Q7. Before powering, count 8 wires on DIP 1–8, 8 on DIP 41–48 and 1 on pin 25, and nothing on pin 24.</p>
+      </div></div>
+      <div class="step"><div>
+        <h3>Full test</h3>
+        <span class="usb on">USB plugged in</span>
+        <p>Run the mode tests below. Press <b>BTN0</b> to change mode; LED1–LED0 show the mode in binary.</p>
+      </div></div>
+    </div>
+  </section>
+
+  <section class="two">
+    <div>
+      <h2>Mode tests</h2>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Mode</th><th>Expected</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">0</td><td>8 digits (<span class="mono">1234</span> + 4 parity digits), no dots, status <b>O</b></td></tr>
+            <tr><td class="mono">1</td><td>One wrong digit with a dot. After 2 s, the correct codeword with the dot on the same digit. Status <b>C</b></td></tr>
+            <tr><td class="mono">2</td><td>Same as mode 1, with two dots</td></tr>
+            <tr><td class="mono">3</td><td>Usually <span class="mono">--------</span> and status <b>X</b>. A rare miscorrection is flagged by the script.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Random messages: <code>python tools\rs_host.py COM6 20 --delay 4</code></p>
+    </div>
+    <div>
+      <h2>Troubleshooting</h2>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Symptom</th><th>Likely cause</th></tr></thead>
+          <tbody>
+            <tr><td>Everything blank</td><td>No message sent yet, GND not linked to the FPGA, or a transistor turned around</td></tr>
+            <tr><td>Segment lights before any message</td><td>A wire on a power pin. Unplug now.</td></tr>
+            <tr><td>One display dead</td><td>Its transistor, its COM wire, or a broken hop on every segment</td></tr>
+            <tr><td>One segment missing from display N onward</td><td>The hop into display N for that segment</td></tr>
+            <tr><td>Garbled characters</td><td>Two segment wires swapped</td></tr>
+            <tr><td>Digits in the wrong order</td><td>Base or collector wires swapped</td></tr>
+            <tr><td>Dim display</td><td>Expected: each digit is lit 1/8 of the time. Dim the room for video.</td></tr>
+            <tr><td>“got 0 of 10 reply bytes”</td><td>Wrong COM port, board not programmed, or press BTN1</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer>RS(8,4) over GF(16) · codeword c7…c0 shown on displays 1…8 · c7–c4 data, c3–c0 parity · SEG_ACTIVE_LOW = 0, DIG_ACTIVE_LOW = 0 in rs_top.v</footer>
+</main>
+
+<script>
+(function () {
+  const NS = "http://www.w3.org/2000/svg";
+  function E(p, tag, a, txt) {
+    const e = document.createElementNS(NS, tag);
+    for (const k in a) e.setAttribute(k, a[k]);
+    if (txt != null) e.textContent = txt;
+    p.appendChild(e);
+    return e;
+  }
+  const L = (p, x1, y1, x2, y2, c) => E(p, "line", { x1, y1, x2, y2, class: c });
+  const T = (p, x, y, s, c, anchor) => E(p, "text", { x, y, class: c, "text-anchor": anchor || "middle" }, s);
+
+  // segment, FPGA DIP pin, FPGA ball, display pin
+  const SEGS = [["a","41","A2","7"],["b","42","B2","6"],["c","43","B1","4"],["d","44","C1","2"],
+                ["e","45","B3","1"],["f","46","B4","9"],["g","47","A3","10"],["dp","48","A4","5"]];
+  const J1BALL = ["L1","M4","M3","N2","M2","P3","N3","P1"];
+  const SYMS = ["c7","c6","c5","c4","c3","c2","c1","c0"];
+
+  // Seven-segment glyph centred on xc, top at y, segment length s, thickness t
+  function glyph(p, xc, y, s, t, cls) {
+    const h = s / 2;
+    const segs = {
+      a: [xc - h, y, s, t], g: [xc - h, y + s + t, s, t], d: [xc - h, y + 2 * s + 2 * t, s, t],
+      f: [xc - h - t, y + t, t, s], b: [xc + h, y + t, t, s],
+      e: [xc - h - t, y + s + 2 * t, t, s], c: [xc + h, y + s + 2 * t, t, s]
+    };
+    for (const k in segs) {
+      const [x, yy, w, hh] = segs[k];
+      E(p, "rect", { x, y: yy, width: w, height: hh, rx: t / 2, class: cls || "glyph" });
+    }
+    E(p, "circle", { cx: xc + h + t * 2.2, cy: y + 2 * s + 2.5 * t, r: t * 0.7, class: cls || "glyph" });
+    return segs;
+  }
+
+  // ---------- schematic ----------
+  const s = document.getElementById("schem");
+  E(s, "rect", { x: 20, y: 30, width: 150, height: 510, rx: 6, class: "chip" });
+  T(s, 30, 52, "DIP 41–48", "t-grp", "start");
+  T(s, 30, 286, "DIP 1–8", "t-grp", "start");
+  T(s, 95, 244, "Cmod S7", "t-chip");
+  T(s, 95, 260, "XC7S25", "t-small");
+
+  SEGS.forEach(([n, pin], k) => {
+    const y = 68 + k * 20;
+    T(s, 160, y + 4, "pin " + pin, "t-pin", "end");
+    L(s, 170, y, 200, y, "w seg");
+    L(s, 200, y, 214, Math.min(y + 14, 220), "w seg");
+    T(s, 186, y - 4, n, "t-seg");
+  });
+  // bus
+  L(s, 214, 82, 214, 232, "w bus");
+  L(s, 214, 232, 966, 232, "w bus");
+  L(s, 236, 224, 246, 240, "w seg");
+  T(s, 250, 222, "8", "t-bus", "start");
+  T(s, 600, 220, "SEGMENT BUS · a b c d e f g dp · 8 wires to every display", "t-bus");
+
+  const QX0 = 252, QDX = 92, CY = 460;
+  for (let i = 0; i < 8; i++) {
+    const xc = QX0 + 8 + i * QDX, cx = QX0 + i * QDX;
+    // bus drop
+    L(s, xc, 232, xc, 262, "w bus");
+    // display
+    E(s, "rect", { x: xc - 38, y: 262, width: 76, height: 118, rx: 5, class: "part" });
+    glyph(s, xc - 3, 272, 22, 4);
+    T(s, xc, 350, "DISP " + (i + 1), "t-part");
+    T(s, xc, 366, "shows " + SYMS[i], "t-small");
+    T(s, xc + 5, 396, "COM", "t-dig", "start");
+    // COM to collector
+    L(s, xc, 380, xc, CY - 14, "w dig");
+    E(s, "circle", { cx, cy: CY, r: 20, class: "qbody" });
+    L(s, xc, CY - 14, cx - 6, CY - 5, "w dig");
+    L(s, cx - 6, CY - 12, cx - 6, CY + 12, "w bar");
+    L(s, cx - 6, CY + 5, xc, CY + 14, "w gnd");
+    E(s, "polygon", { points: `${cx + 8},${CY + 14} ${cx + 0.2},${CY + 13.1} ${cx + 4},${CY + 7.3}`, class: "arrow" });
+    L(s, xc, CY + 14, xc, 515, "w gnd");
+    E(s, "circle", { cx: xc, cy: 515, r: 3.5, class: "dot gnd" });
+    L(s, cx - 36, CY, cx - 6, CY, "w dig");
+    E(s, "circle", { cx: cx - 36, cy: CY, r: 3, class: "term" });
+    T(s, cx - 24, CY - 8, "pin " + (i + 1), "t-dig", "end");
+    T(s, cx - 12, CY + 38, "Q" + i, "t-q");
+  }
+  for (let q = 0; q < 8; q++) {
+    const y = 300 + q * 18;
+    T(s, 160, y + 4, "pin " + (q + 1), "t-pin", "end");
+    L(s, 170, y, 186, y, "w dig");
+    E(s, "circle", { cx: 189, cy: y, r: 3, class: "term" });
+    T(s, 196, y + 4, "Q" + q, "t-dig", "start");
+  }
+  T(s, 95, 496, "pin 24 = 5 V · empty", "t-warn");
+  T(s, 160, 519, "GND", "t-pin", "end");
+  T(s, 160, 533, "pin 25", "t-small", "end");
+  L(s, 170, 515, 960, 515, "w gnd");
+  L(s, 960, 515, 960, 526, "w gnd");
+  L(s, 946, 526, 974, 526, "w gnd");
+  L(s, 951, 532, 969, 532, "w gnd");
+  L(s, 956, 538, 964, 538, "w gnd");
+
+  // ---------- TD-7SGCC pinout ----------
+  const pd = document.getElementById("p-disp");
+  E(pd, "rect", { x: 60, y: 40, width: 140, height: 180, rx: 6, class: "part" });
+  const gs = glyph(pd, 128, 76, 44, 8, "glyph on");
+  const lab = { a: [128, 72, "middle"], b: [168, 118, "start"], c: [168, 170, "start"], d: [128, 200, "middle"],
+                e: [88, 170, "end"], f: [88, 118, "end"], g: [128, 124, "middle"] };
+  for (const k in lab) T(pd, lab[k][0], lab[k][1], k, "t-seg", lab[k][2]);
+  T(pd, 186, 200, "dp", "t-seg", "middle");
+  const top = [["10","g"],["9","f"],["8","COM"],["7","a"],["6","b"]];
+  const bot = [["1","e"],["2","d"],["3","COM"],["4","c"],["5","dp"]];
+  [[top, 28, 18, 56], [bot, 220, 246, 214]].forEach(([row, py, ny, fy]) => row.forEach(([n, f], i) => {
+    const x = 80 + i * 25;
+    E(pd, "rect", { x: x - 4, y: py, width: 8, height: 12, class: "pad" });
+    T(pd, x, ny, n, "t-pin");
+    if (fy === 56) T(pd, x, fy, f, f === "COM" ? "t-dig" : "t-seg");
+  }));
+  // bottom-row function labels sit under the pads so they don't collide with the glyph
+  bot.forEach(([n, f], i) => T(pd, 80 + i * 25, 258, f, f === "COM" ? "t-dig" : "t-seg"));
+  pd.setAttribute("viewBox", "0 0 260 266");
+  // move bottom pin numbers between pad and function label
+  [...pd.querySelectorAll("text")].forEach(t => { if (t.getAttribute("y") === "246") t.setAttribute("y", "244"); });
+
+  // ---------- BC547B ----------
+  const pt = document.getElementById("p-tr");
+  E(pt, "path", { d: "M58 112 L58 48 Q58 26 100 26 Q142 26 142 48 L142 112 Z", class: "part" });
+  E(pt, "path", { d: "M70 40 Q100 30 130 40", class: "w thin" });
+  T(pt, 100, 70, "BC547B", "t-pin");
+  T(pt, 100, 88, "rounded side", "t-small");
+  T(pt, 100, 100, "toward you", "t-small");
+  [["E", "GND", "t-q"], ["B", "DIP 1–8", "t-dig"], ["C", "COM", "t-dig"]].forEach(([l, r, c], i) => {
+    const x = 70 + i * 30;
+    L(pt, x, 112, x, 158, "w thin");
+    T(pt, x, 174, l, c);
+    T(pt, x, 190, r, "t-small");
+  });
+
+  // ---------- DIP header ----------
+  const pp = document.getElementById("p-dip");
+  E(pp, "rect", { x: 70, y: 10, width: 140, height: 460, rx: 6, class: "chip" });
+  T(pp, 140, 244, "Cmod S7", "t-part");
+  T(pp, 140, 260, "top view", "t-small");
+  const segOf = { 41: "a", 42: "b", 43: "c", 44: "d", 45: "e", 46: "f", 47: "g", 48: "dp" };
+  for (let i = 0; i < 24; i++) {
+    const y = 28 + i * 18.5;
+    [[i + 1, 70, 56, "end"], [48 - i, 210, 224, "start"]].forEach(([n, edge, tx, anc]) => {
+      const left = edge === 70;
+      let label = "", cls = "t-small";
+      if (n <= 8) { label = "Q" + (n - 1) + " base"; cls = "t-dig"; }
+      else if (segOf[n]) { label = "seg " + segOf[n]; cls = "t-seg"; }
+      else if (n === 24) { label = "5 V · never"; cls = "t-warn"; }
+      else if (n === 25) { label = "GND rail"; cls = "t-q"; }
+      E(pp, "rect", { x: left ? edge - 8 : edge, y: y - 4, width: 8, height: 8, class: label ? (n === 25 ? "cell g" : "cell") : "pad" });
+      T(pp, left ? edge + 6 : edge - 6, y + 4, String(n), label ? "t-pin" : "t-small", left ? "start" : "end");
+      if (label) T(pp, tx, y + 4, label, cls, anc);
+    });
+  }
+
+  // ---------- tables ----------
+  const ts = document.getElementById("t-seg");
+  SEGS.forEach(([n, pin, ball, dpin]) => {
+    ts.insertAdjacentHTML("beforeend",
+      `<tr><td class="seg">${n}</td><td class="mono">pin ${pin} <span style="color:var(--muted)">(${ball})</span></td>` +
+      `<td class="mono">pin ${dpin}</td>` + '<td class="box"></td>'.repeat(8) + `</tr>`);
+  });
+  const td = document.getElementById("t-dig");
+  for (let q = 0; q < 8; q++) {
+    td.insertAdjacentHTML("beforeend",
+      `<tr><td class="box"></td><td class="mono"><b>Q${q}</b></td><td class="mono">pin ${q + 1} <span style="color:var(--muted)">(${J1BALL[q]})</span></td>` +
+      `<td>display ${q + 1}</td><td class="mono">${SYMS[q]}</td><td>GND rail</td></tr>`);
+  }
+})();
+</script>

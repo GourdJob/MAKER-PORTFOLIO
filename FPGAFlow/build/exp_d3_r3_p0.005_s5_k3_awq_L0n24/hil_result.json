@@ -1,0 +1,10 @@
+{
+  "model": "build\\exp_d3_r3_p0.005_s5_k3_awq_L0n24",
+  "shots": 1000000,
+  "mismatches_vs_golden": 0,
+  "bad_replies": 0,
+  "fpga_ler": 0.016315,
+  "golden_ler": 0.016315,
+  "pymatching_ler": 0.017178,
+  "shots_per_s": 2603
+}

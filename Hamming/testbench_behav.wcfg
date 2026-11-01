@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_hamming_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_hamming_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000000000 s"></ZoomStartTime>
+      <ZoomEndTime time="288,000.000000000001 s"></ZoomEndTime>
+      <Cursor1Time time="0.005536752475 s"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <ValueColumnWidth column_width="87"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="39" />
+   <wvobject fp_name="/tb_hamming_top/dut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/btn" type="array">
+      <obj_property name="ElementShortName">btn[1:0]</obj_property>
+      <obj_property name="ObjectShortName">btn[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/uart_rx" type="logic">
+      <obj_property name="ElementShortName">uart_rx</obj_property>
+      <obj_property name="ObjectShortName">uart_rx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/uart_tx" type="logic">
+      <obj_property name="ElementShortName">uart_tx</obj_property>
+      <obj_property name="ObjectShortName">uart_tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/led" type="array">
+      <obj_property name="ElementShortName">led[3:0]</obj_property>
+      <obj_property name="ObjectShortName">led[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/rgb" type="array">
+      <obj_property name="ElementShortName">rgb[2:0]</obj_property>
+      <obj_property name="ObjectShortName">rgb[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/btn0_pulse" type="logic">
+      <obj_property name="ElementShortName">btn0_pulse</obj_property>
+      <obj_property name="ObjectShortName">btn0_pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/mode" type="array">
+      <obj_property name="ElementShortName">mode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mode[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/lfsr" type="array">
+      <obj_property name="ElementShortName">lfsr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">lfsr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/rx_valid" type="logic">
+      <obj_property name="ElementShortName">rx_valid</obj_property>
+      <obj_property name="ObjectShortName">rx_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/rx_data" type="array">
+      <obj_property name="ElementShortName">rx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/enc_hi" type="array">
+      <obj_property name="ElementShortName">enc_hi[7:0]</obj_property>
+      <obj_property name="ObjectShortName">enc_hi[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/enc_lo" type="array">
+      <obj_property name="ElementShortName">enc_lo[7:0]</obj_property>
+      <obj_property name="ObjectShortName">enc_lo[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/bad_hi" type="array">
+      <obj_property name="ElementShortName">bad_hi[7:0]</obj_property>
+      <obj_property name="ObjectShortName">bad_hi[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/bad_lo" type="array">
+      <obj_property name="ElementShortName">bad_lo[7:0]</obj_property>
+      <obj_property name="ObjectShortName">bad_lo[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/dec_hi" type="array">
+      <obj_property name="ElementShortName">dec_hi[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dec_hi[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/dec_lo" type="array">
+      <obj_property name="ElementShortName">dec_lo[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dec_lo[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/cor_hi" type="logic">
+      <obj_property name="ElementShortName">cor_hi</obj_property>
+      <obj_property name="ObjectShortName">cor_hi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/cor_lo" type="logic">
+      <obj_property name="ElementShortName">cor_lo</obj_property>
+      <obj_property name="ObjectShortName">cor_lo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/unc_hi" type="logic">
+      <obj_property name="ElementShortName">unc_hi</obj_property>
+      <obj_property name="ObjectShortName">unc_hi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/unc_lo" type="logic">
+      <obj_property name="ElementShortName">unc_lo</obj_property>
+      <obj_property name="ObjectShortName">unc_lo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/out_byte" type="array">
+      <obj_property name="ElementShortName">out_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_byte[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/status_byte" type="array">
+      <obj_property name="ElementShortName">status_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">status_byte[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/last_status" type="array">
+      <obj_property name="ElementShortName">last_status[1:0]</obj_property>
+      <obj_property name="ObjectShortName">last_status[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/heartbeat" type="logic">
+      <obj_property name="ElementShortName">heartbeat</obj_property>
+      <obj_property name="ObjectShortName">heartbeat</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/tx_busy" type="logic">
+      <obj_property name="ElementShortName">tx_busy</obj_property>
+      <obj_property name="ObjectShortName">tx_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/tx_start" type="logic">
+      <obj_property name="ElementShortName">tx_start</obj_property>
+      <obj_property name="ObjectShortName">tx_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/tx_data" type="array">
+      <obj_property name="ElementShortName">tx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/rgb_on" type="array">
+      <obj_property name="ElementShortName">rgb_on[2:0]</obj_property>
+      <obj_property name="ObjectShortName">rgb_on[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/CLKS_PER_BIT" type="array">
+      <obj_property name="ElementShortName">CLKS_PER_BIT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CLKS_PER_BIT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/DEBOUNCE_CYCLES" type="array">
+      <obj_property name="ElementShortName">DEBOUNCE_CYCLES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DEBOUNCE_CYCLES[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/RGB_ACTIVE_LOW" type="array">
+      <obj_property name="ElementShortName">RGB_ACTIVE_LOW[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RGB_ACTIVE_LOW[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/IDLE" type="array">
+      <obj_property name="ElementShortName">IDLE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">IDLE[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/TX1" type="array">
+      <obj_property name="ElementShortName">TX1[2:0]</obj_property>
+      <obj_property name="ObjectShortName">TX1[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/WAIT1" type="array">
+      <obj_property name="ElementShortName">WAIT1[2:0]</obj_property>
+      <obj_property name="ObjectShortName">WAIT1[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/TX2" type="array">
+      <obj_property name="ElementShortName">TX2[2:0]</obj_property>
+      <obj_property name="ObjectShortName">TX2[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_hamming_top/dut/WAIT2" type="array">
+      <obj_property name="ElementShortName">WAIT2[2:0]</obj_property>
+      <obj_property name="ObjectShortName">WAIT2[2:0]</obj_property>
+   </wvobject>
+</wave_config>

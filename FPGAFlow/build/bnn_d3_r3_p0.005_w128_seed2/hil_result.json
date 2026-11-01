@@ -1,0 +1,10 @@
+{
+  "model": "build\\bnn_d3_r3_p0.005_w128_seed2",
+  "shots": 1000000,
+  "mismatches_vs_golden": 0,
+  "bad_replies": 0,
+  "fpga_ler": 0.027852,
+  "golden_ler": 0.027852,
+  "pymatching_ler": 0.017178,
+  "shots_per_s": 2590
+}

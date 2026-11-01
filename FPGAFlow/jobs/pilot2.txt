@@ -1,0 +1,17 @@
+# Pilot 2: weight-STE fix (identity gradient), clipping, distillation. 128x128, p=0.005, 3 seeds.
+python host/train.py --data data/d3_r3_p0.005.npz --model bnn --teacher models/fp_d3_r3_p0.005.pt --out-dir models/pilot2 --results results/pilot2.jsonl --tag idste --seed 0
+python host/train.py --data data/d3_r3_p0.005.npz --model bnn --teacher models/fp_d3_r3_p0.005.pt --out-dir models/pilot2 --results results/pilot2.jsonl --tag idste_clip --clip --seed 0
+python host/train.py --data data/d3_r3_p0.005.npz --model bnn --teacher models/fp_d3_r3_p0.005.pt --out-dir models/pilot2 --results results/pilot2.jsonl --tag idste_kd05 --kd 0.5 --seed 0
+python host/train.py --data data/d3_r3_p0.005.npz --model bnn --teacher models/fp_d3_r3_p0.005.pt --out-dir models/pilot2 --results results/pilot2.jsonl --tag idste_clip_kd05 --clip --kd 0.5 --seed 0
+python host/train.py --data data/d3_r3_p0.005.npz --model bnn --teacher models/fp_d3_r3_p0.005.pt --out-dir models/pilot2 --results results/pilot2.jsonl --tag idste --seed 1
+python host/train.py --data data/d3_r3_p0.005.npz --model bnn --teacher models/fp_d3_r3_p0.005.pt --out-dir models/pilot2 --results results/pilot2.jsonl --tag idste_clip --clip --seed 1
+python host/train.py --data data/d3_r3_p0.005.npz --model bnn --teacher models/fp_d3_r3_p0.005.pt --out-dir models/pilot2 --results results/pilot2.jsonl --tag idste_kd05 --kd 0.5 --seed 1
+python host/train.py --data data/d3_r3_p0.005.npz --model bnn --teacher models/fp_d3_r3_p0.005.pt --out-dir models/pilot2 --results results/pilot2.jsonl --tag idste_clip_kd05 --clip --kd 0.5 --seed 1
+python host/train.py --data data/d3_r3_p0.005.npz --model bnn --teacher models/fp_d3_r3_p0.005.pt --out-dir models/pilot2 --results results/pilot2.jsonl --tag idste --seed 2
+python host/train.py --data data/d3_r3_p0.005.npz --model bnn --teacher models/fp_d3_r3_p0.005.pt --out-dir models/pilot2 --results results/pilot2.jsonl --tag idste_clip --clip --seed 2
+python host/train.py --data data/d3_r3_p0.005.npz --model bnn --teacher models/fp_d3_r3_p0.005.pt --out-dir models/pilot2 --results results/pilot2.jsonl --tag idste_kd05 --kd 0.5 --seed 2
+python host/train.py --data data/d3_r3_p0.005.npz --model bnn --teacher models/fp_d3_r3_p0.005.pt --out-dir models/pilot2 --results results/pilot2.jsonl --tag idste_clip_kd05 --clip --kd 0.5 --seed 2
+python host/train.py --data data/10m/d3_r3_p0.005.npz --model bnn --teacher models/10m/fp_d3_r3_p0.005_d10m.pt --out-dir models/pilot2 --results results/pilot2.jsonl --epochs 20 --tag d10m_e20_idste --seed 0
+python host/train.py --data data/10m/d3_r3_p0.005.npz --model bnn --teacher models/10m/fp_d3_r3_p0.005_d10m.pt --out-dir models/pilot2 --results results/pilot2.jsonl --epochs 20 --tag d10m_e20_idste_kd05 --kd 0.5 --seed 0
+python host/train.py --data data/10m/d3_r3_p0.005.npz --model bnn --teacher models/10m/fp_d3_r3_p0.005_d10m.pt --out-dir models/pilot2 --results results/pilot2.jsonl --epochs 20 --tag d10m_e20_idste --seed 1
+python host/train.py --data data/10m/d3_r3_p0.005.npz --model bnn --teacher models/10m/fp_d3_r3_p0.005_d10m.pt --out-dir models/pilot2 --results results/pilot2.jsonl --epochs 20 --tag d10m_e20_idste_kd05 --kd 0.5 --seed 1

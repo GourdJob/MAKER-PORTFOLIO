@@ -1,0 +1,28 @@
+{
+  "checkpoint": "models\\nexp\\nexp_d3_r3_p0.005_n3_awq_uniform_plain.pt",
+  "data": "data\\d3_r3_p0.005.npz",
+  "golden_test_ler": 0.025569,
+  "pytorch_test_ler": 0.025569,
+  "golden_vs_pytorch_mismatches": 0,
+  "test_shots": 1000000,
+  "n_layers": 3,
+  "n_neurons": 272,
+  "n_planes": 272,
+  "layer_sizes": [
+    [
+      24,
+      143
+    ],
+    [
+      143,
+      128
+    ],
+    [
+      128,
+      1
+    ]
+  ],
+  "load_bytes": 21794,
+  "n_vectors": 500,
+  "maxw": 256
+}

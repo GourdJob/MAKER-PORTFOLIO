@@ -1,0 +1,28 @@
+{
+  "checkpoint": "models\\study\\bnn_d3_r3_p0.005_w128_seed2.pt",
+  "data": "data\\d3_r3_p0.005.npz",
+  "golden_test_ler": 0.027852,
+  "pytorch_test_ler": 0.027852,
+  "golden_vs_pytorch_mismatches": 0,
+  "test_shots": 1000000,
+  "n_layers": 3,
+  "n_neurons": 257,
+  "n_planes": 257,
+  "layer_sizes": [
+    [
+      24,
+      128
+    ],
+    [
+      128,
+      128
+    ],
+    [
+      128,
+      1
+    ]
+  ],
+  "load_bytes": 20594,
+  "n_vectors": 2000,
+  "maxw": 256
+}

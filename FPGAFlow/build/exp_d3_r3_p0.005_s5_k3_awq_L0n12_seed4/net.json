@@ -1,0 +1,28 @@
+{
+  "checkpoint": "models\\study\\exp_d3_r3_p0.005_s5_k3_awq_L0n12_seed4.pt",
+  "data": "data\\d3_r3_p0.005.npz",
+  "golden_test_ler": 0.021159,
+  "pytorch_test_ler": 0.021159,
+  "golden_vs_pytorch_mismatches": 0,
+  "test_shots": 1000000,
+  "n_layers": 3,
+  "n_neurons": 257,
+  "n_planes": 513,
+  "layer_sizes": [
+    [
+      24,
+      128
+    ],
+    [
+      128,
+      128
+    ],
+    [
+      128,
+      1
+    ]
+  ],
+  "load_bytes": 38514,
+  "n_vectors": 2000,
+  "maxw": 256
+}

@@ -1,0 +1,424 @@
+fp_d3_r3_p0.005 epoch   1/20  loss 0.35120  val LER 0.030660
+fp_d3_r3_p0.005 epoch   2/20  loss 0.06479  val LER 0.019220
+fp_d3_r3_p0.005 epoch   3/20  loss 0.05415  val LER 0.017720
+fp_d3_r3_p0.005 epoch   4/20  loss 0.05149  val LER 0.017140
+fp_d3_r3_p0.005 epoch   5/20  loss 0.05005  val LER 0.017040
+fp_d3_r3_p0.005 epoch   6/20  loss 0.04930  val LER 0.016580
+fp_d3_r3_p0.005 epoch   7/20  loss 0.04854  val LER 0.016300
+fp_d3_r3_p0.005 epoch   8/20  loss 0.04803  val LER 0.016080
+fp_d3_r3_p0.005 epoch   9/20  loss 0.04730  val LER 0.015920
+fp_d3_r3_p0.005 epoch  10/20  loss 0.04678  val LER 0.016120
+fp_d3_r3_p0.005 epoch  11/20  loss 0.04650  val LER 0.016200
+fp_d3_r3_p0.005 epoch  12/20  loss 0.04590  val LER 0.016340
+fp_d3_r3_p0.005 epoch  13/20  loss 0.04539  val LER 0.015980
+fp_d3_r3_p0.005 epoch  14/20  loss 0.04491  val LER 0.015900
+fp_d3_r3_p0.005 epoch  15/20  loss 0.04448  val LER 0.015880
+fp_d3_r3_p0.005 epoch  16/20  loss 0.04400  val LER 0.015980
+fp_d3_r3_p0.005 epoch  17/20  loss 0.04356  val LER 0.015840
+fp_d3_r3_p0.005 epoch  18/20  loss 0.04322  val LER 0.015900
+fp_d3_r3_p0.005 epoch  19/20  loss 0.04296  val LER 0.015780
+fp_d3_r3_p0.005 epoch  20/20  loss 0.04286  val LER 0.015800
+
+fp_d3_r3_p0.005: test LER 0.015952 +- 0.000125  (PyMatching 0.017178, best epoch 19, 9.2s)
+bnn_d3_r3_p0.005 epoch   1/60  loss 0.25260  val LER 0.550300
+bnn_d3_r3_p0.005 epoch   2/60  loss 0.14448  val LER 0.509680
+bnn_d3_r3_p0.005 epoch   3/60  loss 0.11976  val LER 0.063220
+bnn_d3_r3_p0.005 epoch   4/60  loss 0.11025  val LER 0.075980
+bnn_d3_r3_p0.005 epoch   5/60  loss 0.11016  val LER 0.074440
+bnn_d3_r3_p0.005 epoch   6/60  loss 0.10973  val LER 0.073980
+bnn_d3_r3_p0.005 epoch   7/60  loss 0.10982  val LER 0.053240
+bnn_d3_r3_p0.005 epoch   8/60  loss 0.10923  val LER 0.080340
+bnn_d3_r3_p0.005 epoch   9/60  loss 0.10820  val LER 0.042600
+bnn_d3_r3_p0.005 epoch  10/60  loss 0.10932  val LER 0.049480
+bnn_d3_r3_p0.005 epoch  11/60  loss 0.10824  val LER 0.068480
+bnn_d3_r3_p0.005 epoch  12/60  loss 0.10777  val LER 0.069320
+bnn_d3_r3_p0.005 epoch  13/60  loss 0.10814  val LER 0.065900
+bnn_d3_r3_p0.005 epoch  14/60  loss 0.10520  val LER 0.065460
+bnn_d3_r3_p0.005 epoch  15/60  loss 0.10442  val LER 0.061200
+bnn_d3_r3_p0.005 epoch  16/60  loss 0.10382  val LER 0.049120
+bnn_d3_r3_p0.005 epoch  17/60  loss 0.10615  val LER 0.057200
+bnn_d3_r3_p0.005 epoch  18/60  loss 0.10513  val LER 0.057860
+bnn_d3_r3_p0.005 epoch  19/60  loss 0.10457  val LER 0.058760
+bnn_d3_r3_p0.005 epoch  20/60  loss 0.10268  val LER 0.079700
+bnn_d3_r3_p0.005 epoch  21/60  loss 0.10639  val LER 0.049100
+bnn_d3_r3_p0.005 epoch  22/60  loss 0.10258  val LER 0.069320
+bnn_d3_r3_p0.005 epoch  23/60  loss 0.10104  val LER 0.069360
+bnn_d3_r3_p0.005 epoch  24/60  loss 0.10122  val LER 0.057280
+bnn_d3_r3_p0.005 epoch  25/60  loss 0.10086  val LER 0.058800
+bnn_d3_r3_p0.005 epoch  26/60  loss 0.10211  val LER 0.071920
+bnn_d3_r3_p0.005 epoch  27/60  loss 0.10153  val LER 0.055600
+bnn_d3_r3_p0.005 epoch  28/60  loss 0.09980  val LER 0.054060
+bnn_d3_r3_p0.005 epoch  29/60  loss 0.10001  val LER 0.080540
+bnn_d3_r3_p0.005 epoch  30/60  loss 0.09782  val LER 0.069900
+bnn_d3_r3_p0.005 epoch  31/60  loss 0.09938  val LER 0.051860
+bnn_d3_r3_p0.005 epoch  32/60  loss 0.09825  val LER 0.058620
+bnn_d3_r3_p0.005 epoch  33/60  loss 0.09778  val LER 0.075900
+bnn_d3_r3_p0.005 epoch  34/60  loss 0.09876  val LER 0.096980
+bnn_d3_r3_p0.005 epoch  35/60  loss 0.09877  val LER 0.064880
+bnn_d3_r3_p0.005 epoch  36/60  loss 0.09556  val LER 0.061560
+bnn_d3_r3_p0.005 epoch  37/60  loss 0.09647  val LER 0.059360
+bnn_d3_r3_p0.005 epoch  38/60  loss 0.09545  val LER 0.070700
+bnn_d3_r3_p0.005 epoch  39/60  loss 0.09462  val LER 0.042820
+bnn_d3_r3_p0.005 epoch  40/60  loss 0.09687  val LER 0.058040
+bnn_d3_r3_p0.005 epoch  41/60  loss 0.09537  val LER 0.064860
+bnn_d3_r3_p0.005 epoch  42/60  loss 0.09477  val LER 0.077180
+bnn_d3_r3_p0.005 epoch  43/60  loss 0.09261  val LER 0.032100
+bnn_d3_r3_p0.005 epoch  44/60  loss 0.09399  val LER 0.042240
+bnn_d3_r3_p0.005 epoch  45/60  loss 0.09383  val LER 0.048620
+bnn_d3_r3_p0.005 epoch  46/60  loss 0.09078  val LER 0.060280
+bnn_d3_r3_p0.005 epoch  47/60  loss 0.09464  val LER 0.059740
+bnn_d3_r3_p0.005 epoch  48/60  loss 0.09089  val LER 0.035360
+bnn_d3_r3_p0.005 epoch  49/60  loss 0.09204  val LER 0.041520
+bnn_d3_r3_p0.005 epoch  50/60  loss 0.09108  val LER 0.046040
+bnn_d3_r3_p0.005 epoch  51/60  loss 0.09097  val LER 0.040000
+bnn_d3_r3_p0.005 epoch  52/60  loss 0.09027  val LER 0.078760
+bnn_d3_r3_p0.005 epoch  53/60  loss 0.09182  val LER 0.039880
+bnn_d3_r3_p0.005 epoch  54/60  loss 0.09013  val LER 0.034580
+bnn_d3_r3_p0.005 epoch  55/60  loss 0.09063  val LER 0.040280
+bnn_d3_r3_p0.005 epoch  56/60  loss 0.08987  val LER 0.036280
+bnn_d3_r3_p0.005 epoch  57/60  loss 0.08805  val LER 0.034840
+bnn_d3_r3_p0.005 epoch  58/60  loss 0.08717  val LER 0.037200
+bnn_d3_r3_p0.005 epoch  59/60  loss 0.08689  val LER 0.034800
+bnn_d3_r3_p0.005 epoch  60/60  loss 0.08020  val LER 0.033300
+
+bnn_d3_r3_p0.005: test LER 0.033055 +- 0.000179  (PyMatching 0.017178, best epoch 43, 49.1s)
+bnn_d3_r3_p0.005_seed1 epoch   1/60  loss 0.25110  val LER 0.071340
+bnn_d3_r3_p0.005_seed1 epoch   2/60  loss 0.14498  val LER 0.065020
+bnn_d3_r3_p0.005_seed1 epoch   3/60  loss 0.11824  val LER 0.060620
+bnn_d3_r3_p0.005_seed1 epoch   4/60  loss 0.10982  val LER 0.048840
+bnn_d3_r3_p0.005_seed1 epoch   5/60  loss 0.11034  val LER 0.066220
+bnn_d3_r3_p0.005_seed1 epoch   6/60  loss 0.10921  val LER 0.074620
+bnn_d3_r3_p0.005_seed1 epoch   7/60  loss 0.10954  val LER 0.080540
+bnn_d3_r3_p0.005_seed1 epoch   8/60  loss 0.10853  val LER 0.084840
+bnn_d3_r3_p0.005_seed1 epoch   9/60  loss 0.10842  val LER 0.059400
+bnn_d3_r3_p0.005_seed1 epoch  10/60  loss 0.10717  val LER 0.081500
+bnn_d3_r3_p0.005_seed1 epoch  11/60  loss 0.10881  val LER 0.058420
+bnn_d3_r3_p0.005_seed1 epoch  12/60  loss 0.10724  val LER 0.070260
+bnn_d3_r3_p0.005_seed1 epoch  13/60  loss 0.10810  val LER 0.067500
+bnn_d3_r3_p0.005_seed1 epoch  14/60  loss 0.10682  val LER 0.072740
+bnn_d3_r3_p0.005_seed1 epoch  15/60  loss 0.10607  val LER 0.064700
+bnn_d3_r3_p0.005_seed1 epoch  16/60  loss 0.10546  val LER 0.042760
+bnn_d3_r3_p0.005_seed1 epoch  17/60  loss 0.10195  val LER 0.065480
+bnn_d3_r3_p0.005_seed1 epoch  18/60  loss 0.10327  val LER 0.060660
+bnn_d3_r3_p0.005_seed1 epoch  19/60  loss 0.10174  val LER 0.050360
+bnn_d3_r3_p0.005_seed1 epoch  20/60  loss 0.10404  val LER 0.044420
+bnn_d3_r3_p0.005_seed1 epoch  21/60  loss 0.10342  val LER 0.088360
+bnn_d3_r3_p0.005_seed1 epoch  22/60  loss 0.10006  val LER 0.068800
+bnn_d3_r3_p0.005_seed1 epoch  23/60  loss 0.10060  val LER 0.075240
+bnn_d3_r3_p0.005_seed1 epoch  24/60  loss 0.09989  val LER 0.042720
+bnn_d3_r3_p0.005_seed1 epoch  25/60  loss 0.10140  val LER 0.062760
+bnn_d3_r3_p0.005_seed1 epoch  26/60  loss 0.09978  val LER 0.048500
+bnn_d3_r3_p0.005_seed1 epoch  27/60  loss 0.09793  val LER 0.059480
+bnn_d3_r3_p0.005_seed1 epoch  28/60  loss 0.09991  val LER 0.059380
+bnn_d3_r3_p0.005_seed1 epoch  29/60  loss 0.10007  val LER 0.053060
+bnn_d3_r3_p0.005_seed1 epoch  30/60  loss 0.09931  val LER 0.045060
+bnn_d3_r3_p0.005_seed1 epoch  31/60  loss 0.09785  val LER 0.085720
+bnn_d3_r3_p0.005_seed1 epoch  32/60  loss 0.09834  val LER 0.057560
+bnn_d3_r3_p0.005_seed1 epoch  33/60  loss 0.09870  val LER 0.061680
+bnn_d3_r3_p0.005_seed1 epoch  34/60  loss 0.09766  val LER 0.040220
+bnn_d3_r3_p0.005_seed1 epoch  35/60  loss 0.09761  val LER 0.046980
+bnn_d3_r3_p0.005_seed1 epoch  36/60  loss 0.09676  val LER 0.054040
+bnn_d3_r3_p0.005_seed1 epoch  37/60  loss 0.09477  val LER 0.052340
+bnn_d3_r3_p0.005_seed1 epoch  38/60  loss 0.09483  val LER 0.052880
+bnn_d3_r3_p0.005_seed1 epoch  39/60  loss 0.09679  val LER 0.052620
+bnn_d3_r3_p0.005_seed1 epoch  40/60  loss 0.09585  val LER 0.051800
+bnn_d3_r3_p0.005_seed1 epoch  41/60  loss 0.09406  val LER 0.068260
+bnn_d3_r3_p0.005_seed1 epoch  42/60  loss 0.09365  val LER 0.057840
+bnn_d3_r3_p0.005_seed1 epoch  43/60  loss 0.09454  val LER 0.074600
+bnn_d3_r3_p0.005_seed1 epoch  44/60  loss 0.09324  val LER 0.049540
+bnn_d3_r3_p0.005_seed1 epoch  45/60  loss 0.09410  val LER 0.048420
+bnn_d3_r3_p0.005_seed1 epoch  46/60  loss 0.09121  val LER 0.036120
+bnn_d3_r3_p0.005_seed1 epoch  47/60  loss 0.09246  val LER 0.038780
+bnn_d3_r3_p0.005_seed1 epoch  48/60  loss 0.09207  val LER 0.043040
+bnn_d3_r3_p0.005_seed1 epoch  49/60  loss 0.09123  val LER 0.076200
+bnn_d3_r3_p0.005_seed1 epoch  50/60  loss 0.09093  val LER 0.053740
+bnn_d3_r3_p0.005_seed1 epoch  51/60  loss 0.09046  val LER 0.050080
+bnn_d3_r3_p0.005_seed1 epoch  52/60  loss 0.09188  val LER 0.061640
+bnn_d3_r3_p0.005_seed1 epoch  53/60  loss 0.09078  val LER 0.077340
+bnn_d3_r3_p0.005_seed1 epoch  54/60  loss 0.09056  val LER 0.048840
+bnn_d3_r3_p0.005_seed1 epoch  55/60  loss 0.08993  val LER 0.038640
+bnn_d3_r3_p0.005_seed1 epoch  56/60  loss 0.08848  val LER 0.045520
+bnn_d3_r3_p0.005_seed1 epoch  57/60  loss 0.08848  val LER 0.055580
+bnn_d3_r3_p0.005_seed1 epoch  58/60  loss 0.08800  val LER 0.073240
+bnn_d3_r3_p0.005_seed1 epoch  59/60  loss 0.08652  val LER 0.054080
+bnn_d3_r3_p0.005_seed1 epoch  60/60  loss 0.08262  val LER 0.029040
+
+bnn_d3_r3_p0.005_seed1: test LER 0.029651 +- 0.000170  (PyMatching 0.017178, best epoch 60, 51.5s)
+bnn_d3_r3_p0.005_seed2 epoch   1/60  loss 0.25263  val LER 0.084580
+bnn_d3_r3_p0.005_seed2 epoch   2/60  loss 0.14367  val LER 0.079340
+bnn_d3_r3_p0.005_seed2 epoch   3/60  loss 0.11777  val LER 0.063360
+bnn_d3_r3_p0.005_seed2 epoch   4/60  loss 0.10978  val LER 0.074620
+bnn_d3_r3_p0.005_seed2 epoch   5/60  loss 0.10845  val LER 0.065900
+bnn_d3_r3_p0.005_seed2 epoch   6/60  loss 0.10864  val LER 0.068000
+bnn_d3_r3_p0.005_seed2 epoch   7/60  loss 0.10677  val LER 0.058820
+bnn_d3_r3_p0.005_seed2 epoch   8/60  loss 0.10705  val LER 0.073640
+bnn_d3_r3_p0.005_seed2 epoch   9/60  loss 0.10955  val LER 0.084140
+bnn_d3_r3_p0.005_seed2 epoch  10/60  loss 0.10807  val LER 0.077140
+bnn_d3_r3_p0.005_seed2 epoch  11/60  loss 0.10807  val LER 0.069360
+bnn_d3_r3_p0.005_seed2 epoch  12/60  loss 0.10710  val LER 0.061280
+bnn_d3_r3_p0.005_seed2 epoch  13/60  loss 0.10732  val LER 0.056880
+bnn_d3_r3_p0.005_seed2 epoch  14/60  loss 0.10744  val LER 0.080500
+bnn_d3_r3_p0.005_seed2 epoch  15/60  loss 0.10279  val LER 0.043400
+bnn_d3_r3_p0.005_seed2 epoch  16/60  loss 0.10469  val LER 0.072240
+bnn_d3_r3_p0.005_seed2 epoch  17/60  loss 0.10352  val LER 0.070460
+bnn_d3_r3_p0.005_seed2 epoch  18/60  loss 0.10057  val LER 0.078360
+bnn_d3_r3_p0.005_seed2 epoch  19/60  loss 0.10180  val LER 0.058220
+bnn_d3_r3_p0.005_seed2 epoch  20/60  loss 0.10113  val LER 0.049780
+bnn_d3_r3_p0.005_seed2 epoch  21/60  loss 0.10186  val LER 0.061920
+bnn_d3_r3_p0.005_seed2 epoch  22/60  loss 0.10271  val LER 0.067580
+bnn_d3_r3_p0.005_seed2 epoch  23/60  loss 0.10042  val LER 0.044400
+bnn_d3_r3_p0.005_seed2 epoch  24/60  loss 0.10043  val LER 0.066360
+bnn_d3_r3_p0.005_seed2 epoch  25/60  loss 0.09977  val LER 0.081480
+bnn_d3_r3_p0.005_seed2 epoch  26/60  loss 0.09994  val LER 0.082680
+bnn_d3_r3_p0.005_seed2 epoch  27/60  loss 0.09968  val LER 0.073400
+bnn_d3_r3_p0.005_seed2 epoch  28/60  loss 0.09935  val LER 0.055200
+bnn_d3_r3_p0.005_seed2 epoch  29/60  loss 0.09822  val LER 0.067240
+bnn_d3_r3_p0.005_seed2 epoch  30/60  loss 0.09900  val LER 0.047220
+bnn_d3_r3_p0.005_seed2 epoch  31/60  loss 0.09992  val LER 0.078260
+bnn_d3_r3_p0.005_seed2 epoch  32/60  loss 0.09828  val LER 0.061540
+bnn_d3_r3_p0.005_seed2 epoch  33/60  loss 0.09789  val LER 0.056440
+bnn_d3_r3_p0.005_seed2 epoch  34/60  loss 0.09763  val LER 0.057740
+bnn_d3_r3_p0.005_seed2 epoch  35/60  loss 0.09592  val LER 0.065500
+bnn_d3_r3_p0.005_seed2 epoch  36/60  loss 0.09629  val LER 0.045600
+bnn_d3_r3_p0.005_seed2 epoch  37/60  loss 0.09607  val LER 0.072980
+bnn_d3_r3_p0.005_seed2 epoch  38/60  loss 0.09439  val LER 0.034160
+bnn_d3_r3_p0.005_seed2 epoch  39/60  loss 0.09354  val LER 0.039980
+bnn_d3_r3_p0.005_seed2 epoch  40/60  loss 0.09380  val LER 0.047960
+bnn_d3_r3_p0.005_seed2 epoch  41/60  loss 0.09301  val LER 0.056700
+bnn_d3_r3_p0.005_seed2 epoch  42/60  loss 0.09438  val LER 0.060760
+bnn_d3_r3_p0.005_seed2 epoch  43/60  loss 0.09387  val LER 0.041160
+bnn_d3_r3_p0.005_seed2 epoch  44/60  loss 0.09287  val LER 0.048760
+bnn_d3_r3_p0.005_seed2 epoch  45/60  loss 0.09088  val LER 0.050640
+bnn_d3_r3_p0.005_seed2 epoch  46/60  loss 0.09188  val LER 0.065700
+bnn_d3_r3_p0.005_seed2 epoch  47/60  loss 0.09124  val LER 0.055800
+bnn_d3_r3_p0.005_seed2 epoch  48/60  loss 0.09043  val LER 0.068500
+bnn_d3_r3_p0.005_seed2 epoch  49/60  loss 0.09107  val LER 0.045920
+bnn_d3_r3_p0.005_seed2 epoch  50/60  loss 0.08824  val LER 0.069000
+bnn_d3_r3_p0.005_seed2 epoch  51/60  loss 0.08941  val LER 0.058940
+bnn_d3_r3_p0.005_seed2 epoch  52/60  loss 0.08969  val LER 0.044040
+bnn_d3_r3_p0.005_seed2 epoch  53/60  loss 0.08869  val LER 0.041300
+bnn_d3_r3_p0.005_seed2 epoch  54/60  loss 0.08982  val LER 0.051500
+bnn_d3_r3_p0.005_seed2 epoch  55/60  loss 0.08835  val LER 0.048520
+bnn_d3_r3_p0.005_seed2 epoch  56/60  loss 0.08843  val LER 0.038760
+bnn_d3_r3_p0.005_seed2 epoch  57/60  loss 0.08794  val LER 0.054960
+bnn_d3_r3_p0.005_seed2 epoch  58/60  loss 0.08878  val LER 0.042840
+bnn_d3_r3_p0.005_seed2 epoch  59/60  loss 0.08564  val LER 0.040480
+bnn_d3_r3_p0.005_seed2 epoch  60/60  loss 0.08033  val LER 0.026820
+
+bnn_d3_r3_p0.005_seed2: test LER 0.027151 +- 0.000163  (PyMatching 0.017178, best epoch 60, 53.2s)
+salient channels per layer: [[17], [104], [96]]
+exp_d3_r3_p0.005_s1_k2_awq epoch   1/60  loss 0.26030  val LER 0.091620
+exp_d3_r3_p0.005_s1_k2_awq epoch   2/60  loss 0.14527  val LER 0.087060
+exp_d3_r3_p0.005_s1_k2_awq epoch   3/60  loss 0.11836  val LER 0.067160
+exp_d3_r3_p0.005_s1_k2_awq epoch   4/60  loss 0.11193  val LER 0.059260
+exp_d3_r3_p0.005_s1_k2_awq epoch   5/60  loss 0.10953  val LER 0.052480
+exp_d3_r3_p0.005_s1_k2_awq epoch   6/60  loss 0.10645  val LER 0.062360
+exp_d3_r3_p0.005_s1_k2_awq epoch   7/60  loss 0.10473  val LER 0.048760
+exp_d3_r3_p0.005_s1_k2_awq epoch   8/60  loss 0.10523  val LER 0.047320
+exp_d3_r3_p0.005_s1_k2_awq epoch   9/60  loss 0.10679  val LER 0.067240
+exp_d3_r3_p0.005_s1_k2_awq epoch  10/60  loss 0.10567  val LER 0.050980
+exp_d3_r3_p0.005_s1_k2_awq epoch  11/60  loss 0.10611  val LER 0.063860
+exp_d3_r3_p0.005_s1_k2_awq epoch  12/60  loss 0.10768  val LER 0.062400
+exp_d3_r3_p0.005_s1_k2_awq epoch  13/60  loss 0.10546  val LER 0.076540
+exp_d3_r3_p0.005_s1_k2_awq epoch  14/60  loss 0.10603  val LER 0.046240
+exp_d3_r3_p0.005_s1_k2_awq epoch  15/60  loss 0.10491  val LER 0.080240
+exp_d3_r3_p0.005_s1_k2_awq epoch  16/60  loss 0.10492  val LER 0.063600
+exp_d3_r3_p0.005_s1_k2_awq epoch  17/60  loss 0.10195  val LER 0.038640
+exp_d3_r3_p0.005_s1_k2_awq epoch  18/60  loss 0.10298  val LER 0.055400
+exp_d3_r3_p0.005_s1_k2_awq epoch  19/60  loss 0.10129  val LER 0.492480
+exp_d3_r3_p0.005_s1_k2_awq epoch  20/60  loss 0.10285  val LER 0.056340
+exp_d3_r3_p0.005_s1_k2_awq epoch  21/60  loss 0.10109  val LER 0.081760
+exp_d3_r3_p0.005_s1_k2_awq epoch  22/60  loss 0.10032  val LER 0.037780
+exp_d3_r3_p0.005_s1_k2_awq epoch  23/60  loss 0.09896  val LER 0.066560
+exp_d3_r3_p0.005_s1_k2_awq epoch  24/60  loss 0.10024  val LER 0.046660
+exp_d3_r3_p0.005_s1_k2_awq epoch  25/60  loss 0.09822  val LER 0.069620
+exp_d3_r3_p0.005_s1_k2_awq epoch  26/60  loss 0.10100  val LER 0.081820
+exp_d3_r3_p0.005_s1_k2_awq epoch  27/60  loss 0.09734  val LER 0.058020
+exp_d3_r3_p0.005_s1_k2_awq epoch  28/60  loss 0.09806  val LER 0.045640
+exp_d3_r3_p0.005_s1_k2_awq epoch  29/60  loss 0.09855  val LER 0.047020
+exp_d3_r3_p0.005_s1_k2_awq epoch  30/60  loss 0.09692  val LER 0.049880
+exp_d3_r3_p0.005_s1_k2_awq epoch  31/60  loss 0.09748  val LER 0.060120
+exp_d3_r3_p0.005_s1_k2_awq epoch  32/60  loss 0.09572  val LER 0.053220
+exp_d3_r3_p0.005_s1_k2_awq epoch  33/60  loss 0.09582  val LER 0.040900
+exp_d3_r3_p0.005_s1_k2_awq epoch  34/60  loss 0.09594  val LER 0.052340
+exp_d3_r3_p0.005_s1_k2_awq epoch  35/60  loss 0.09718  val LER 0.036040
+exp_d3_r3_p0.005_s1_k2_awq epoch  36/60  loss 0.09541  val LER 0.046160
+exp_d3_r3_p0.005_s1_k2_awq epoch  37/60  loss 0.09530  val LER 0.036960
+exp_d3_r3_p0.005_s1_k2_awq epoch  38/60  loss 0.09539  val LER 0.049160
+exp_d3_r3_p0.005_s1_k2_awq epoch  39/60  loss 0.09384  val LER 0.040000
+exp_d3_r3_p0.005_s1_k2_awq epoch  40/60  loss 0.09284  val LER 0.054680
+exp_d3_r3_p0.005_s1_k2_awq epoch  41/60  loss 0.09338  val LER 0.070240
+exp_d3_r3_p0.005_s1_k2_awq epoch  42/60  loss 0.09290  val LER 0.037740
+exp_d3_r3_p0.005_s1_k2_awq epoch  43/60  loss 0.09166  val LER 0.038080
+exp_d3_r3_p0.005_s1_k2_awq epoch  44/60  loss 0.09101  val LER 0.035400
+exp_d3_r3_p0.005_s1_k2_awq epoch  45/60  loss 0.09055  val LER 0.059580
+exp_d3_r3_p0.005_s1_k2_awq epoch  46/60  loss 0.09230  val LER 0.078100
+exp_d3_r3_p0.005_s1_k2_awq epoch  47/60  loss 0.09005  val LER 0.052680
+exp_d3_r3_p0.005_s1_k2_awq epoch  48/60  loss 0.08995  val LER 0.037880
+exp_d3_r3_p0.005_s1_k2_awq epoch  49/60  loss 0.09082  val LER 0.043960
+exp_d3_r3_p0.005_s1_k2_awq epoch  50/60  loss 0.08956  val LER 0.041460
+exp_d3_r3_p0.005_s1_k2_awq epoch  51/60  loss 0.08891  val LER 0.047340
+exp_d3_r3_p0.005_s1_k2_awq epoch  52/60  loss 0.09057  val LER 0.055800
+exp_d3_r3_p0.005_s1_k2_awq epoch  53/60  loss 0.08856  val LER 0.038640
+exp_d3_r3_p0.005_s1_k2_awq epoch  54/60  loss 0.08850  val LER 0.059460
+exp_d3_r3_p0.005_s1_k2_awq epoch  55/60  loss 0.08733  val LER 0.042260
+exp_d3_r3_p0.005_s1_k2_awq epoch  56/60  loss 0.08822  val LER 0.045640
+exp_d3_r3_p0.005_s1_k2_awq epoch  57/60  loss 0.08766  val LER 0.057800
+exp_d3_r3_p0.005_s1_k2_awq epoch  58/60  loss 0.08644  val LER 0.060380
+exp_d3_r3_p0.005_s1_k2_awq epoch  59/60  loss 0.08645  val LER 0.046000
+exp_d3_r3_p0.005_s1_k2_awq epoch  60/60  loss 0.08000  val LER 0.027600
+
+exp_d3_r3_p0.005_s1_k2_awq: test LER 0.027420 +- 0.000163  (PyMatching 0.017178, best epoch 60, 76.3s)
+salient channels per layer: [[17], [59, 71, 84, 92, 104, 114], [7, 61, 62, 86, 96, 116]]
+exp_d3_r3_p0.005_s5_k2_awq epoch   1/60  loss 0.26134  val LER 0.070020
+exp_d3_r3_p0.005_s5_k2_awq epoch   2/60  loss 0.14510  val LER 0.068800
+exp_d3_r3_p0.005_s5_k2_awq epoch   3/60  loss 0.11856  val LER 0.061840
+exp_d3_r3_p0.005_s5_k2_awq epoch   4/60  loss 0.10974  val LER 0.066360
+exp_d3_r3_p0.005_s5_k2_awq epoch   5/60  loss 0.10710  val LER 0.051720
+exp_d3_r3_p0.005_s5_k2_awq epoch   6/60  loss 0.10599  val LER 0.043200
+exp_d3_r3_p0.005_s5_k2_awq epoch   7/60  loss 0.10691  val LER 0.059540
+exp_d3_r3_p0.005_s5_k2_awq epoch   8/60  loss 0.10810  val LER 0.052720
+exp_d3_r3_p0.005_s5_k2_awq epoch   9/60  loss 0.10982  val LER 0.063560
+exp_d3_r3_p0.005_s5_k2_awq epoch  10/60  loss 0.10956  val LER 0.051820
+exp_d3_r3_p0.005_s5_k2_awq epoch  11/60  loss 0.10960  val LER 0.048540
+exp_d3_r3_p0.005_s5_k2_awq epoch  12/60  loss 0.10942  val LER 0.078480
+exp_d3_r3_p0.005_s5_k2_awq epoch  13/60  loss 0.10844  val LER 0.054380
+exp_d3_r3_p0.005_s5_k2_awq epoch  14/60  loss 0.10608  val LER 0.047500
+exp_d3_r3_p0.005_s5_k2_awq epoch  15/60  loss 0.10577  val LER 0.057060
+exp_d3_r3_p0.005_s5_k2_awq epoch  16/60  loss 0.10432  val LER 0.047860
+exp_d3_r3_p0.005_s5_k2_awq epoch  17/60  loss 0.10418  val LER 0.068140
+exp_d3_r3_p0.005_s5_k2_awq epoch  18/60  loss 0.10242  val LER 0.056040
+exp_d3_r3_p0.005_s5_k2_awq epoch  19/60  loss 0.10450  val LER 0.045500
+exp_d3_r3_p0.005_s5_k2_awq epoch  20/60  loss 0.10174  val LER 0.044360
+exp_d3_r3_p0.005_s5_k2_awq epoch  21/60  loss 0.10159  val LER 0.076980
+exp_d3_r3_p0.005_s5_k2_awq epoch  22/60  loss 0.10017  val LER 0.043480
+exp_d3_r3_p0.005_s5_k2_awq epoch  23/60  loss 0.09909  val LER 0.062980
+exp_d3_r3_p0.005_s5_k2_awq epoch  24/60  loss 0.09901  val LER 0.050600
+exp_d3_r3_p0.005_s5_k2_awq epoch  25/60  loss 0.09954  val LER 0.036340
+exp_d3_r3_p0.005_s5_k2_awq epoch  26/60  loss 0.09988  val LER 0.062980
+exp_d3_r3_p0.005_s5_k2_awq epoch  27/60  loss 0.09708  val LER 0.050420
+exp_d3_r3_p0.005_s5_k2_awq epoch  28/60  loss 0.09915  val LER 0.066720
+exp_d3_r3_p0.005_s5_k2_awq epoch  29/60  loss 0.09852  val LER 0.061520
+exp_d3_r3_p0.005_s5_k2_awq epoch  30/60  loss 0.09851  val LER 0.043020
+exp_d3_r3_p0.005_s5_k2_awq epoch  31/60  loss 0.09664  val LER 0.066840
+exp_d3_r3_p0.005_s5_k2_awq epoch  32/60  loss 0.09643  val LER 0.078300
+exp_d3_r3_p0.005_s5_k2_awq epoch  33/60  loss 0.09589  val LER 0.039060
+exp_d3_r3_p0.005_s5_k2_awq epoch  34/60  loss 0.09690  val LER 0.075920
+exp_d3_r3_p0.005_s5_k2_awq epoch  35/60  loss 0.09459  val LER 0.064460
+exp_d3_r3_p0.005_s5_k2_awq epoch  36/60  loss 0.09410  val LER 0.050320
+exp_d3_r3_p0.005_s5_k2_awq epoch  37/60  loss 0.09408  val LER 0.081500
+exp_d3_r3_p0.005_s5_k2_awq epoch  38/60  loss 0.09535  val LER 0.051180
+exp_d3_r3_p0.005_s5_k2_awq epoch  39/60  loss 0.09430  val LER 0.035880
+exp_d3_r3_p0.005_s5_k2_awq epoch  40/60  loss 0.09363  val LER 0.043260
+exp_d3_r3_p0.005_s5_k2_awq epoch  41/60  loss 0.09171  val LER 0.046360
+exp_d3_r3_p0.005_s5_k2_awq epoch  42/60  loss 0.09176  val LER 0.060140
+exp_d3_r3_p0.005_s5_k2_awq epoch  43/60  loss 0.09241  val LER 0.040740
+exp_d3_r3_p0.005_s5_k2_awq epoch  44/60  loss 0.09206  val LER 0.076380
+exp_d3_r3_p0.005_s5_k2_awq epoch  45/60  loss 0.09048  val LER 0.052760
+exp_d3_r3_p0.005_s5_k2_awq epoch  46/60  loss 0.09124  val LER 0.036200
+exp_d3_r3_p0.005_s5_k2_awq epoch  47/60  loss 0.09195  val LER 0.048300
+exp_d3_r3_p0.005_s5_k2_awq epoch  48/60  loss 0.09027  val LER 0.076280
+exp_d3_r3_p0.005_s5_k2_awq epoch  49/60  loss 0.08981  val LER 0.040520
+exp_d3_r3_p0.005_s5_k2_awq epoch  50/60  loss 0.09022  val LER 0.040720
+exp_d3_r3_p0.005_s5_k2_awq epoch  51/60  loss 0.08977  val LER 0.048440
+exp_d3_r3_p0.005_s5_k2_awq epoch  52/60  loss 0.08849  val LER 0.038780
+exp_d3_r3_p0.005_s5_k2_awq epoch  53/60  loss 0.08838  val LER 0.055520
+exp_d3_r3_p0.005_s5_k2_awq epoch  54/60  loss 0.08980  val LER 0.034580
+exp_d3_r3_p0.005_s5_k2_awq epoch  55/60  loss 0.08741  val LER 0.056480
+exp_d3_r3_p0.005_s5_k2_awq epoch  56/60  loss 0.08856  val LER 0.033480
+exp_d3_r3_p0.005_s5_k2_awq epoch  57/60  loss 0.08630  val LER 0.035680
+exp_d3_r3_p0.005_s5_k2_awq epoch  58/60  loss 0.08721  val LER 0.044740
+exp_d3_r3_p0.005_s5_k2_awq epoch  59/60  loss 0.08476  val LER 0.031760
+exp_d3_r3_p0.005_s5_k2_awq epoch  60/60  loss 0.08028  val LER 0.026180
+
+exp_d3_r3_p0.005_s5_k2_awq: test LER 0.026133 +- 0.000160  (PyMatching 0.017178, best epoch 60, 75.0s)
+salient channels per layer: [[6, 17], [39, 41, 54, 59, 67, 71, 82, 84, 92, 104, 114, 115, 119], [7, 60, 61, 62, 63, 86, 88, 92, 96, 112, 116, 123, 125]]
+exp_d3_r3_p0.005_s10_k2_awq epoch   1/60  loss 0.28360  val LER 0.070400
+exp_d3_r3_p0.005_s10_k2_awq epoch   2/60  loss 0.14575  val LER 0.063780
+exp_d3_r3_p0.005_s10_k2_awq epoch   3/60  loss 0.11695  val LER 0.060500
+exp_d3_r3_p0.005_s10_k2_awq epoch   4/60  loss 0.10642  val LER 0.060840
+exp_d3_r3_p0.005_s10_k2_awq epoch   5/60  loss 0.10487  val LER 0.066980
+exp_d3_r3_p0.005_s10_k2_awq epoch   6/60  loss 0.10521  val LER 0.056200
+exp_d3_r3_p0.005_s10_k2_awq epoch   7/60  loss 0.10419  val LER 0.057980
+exp_d3_r3_p0.005_s10_k2_awq epoch   8/60  loss 0.10522  val LER 0.057480
+exp_d3_r3_p0.005_s10_k2_awq epoch   9/60  loss 0.10187  val LER 0.056900
+exp_d3_r3_p0.005_s10_k2_awq epoch  10/60  loss 0.10524  val LER 0.040420
+exp_d3_r3_p0.005_s10_k2_awq epoch  11/60  loss 0.10376  val LER 0.059440
+exp_d3_r3_p0.005_s10_k2_awq epoch  12/60  loss 0.10365  val LER 0.039100
+exp_d3_r3_p0.005_s10_k2_awq epoch  13/60  loss 0.10123  val LER 0.055920
+exp_d3_r3_p0.005_s10_k2_awq epoch  14/60  loss 0.10191  val LER 0.079820
+exp_d3_r3_p0.005_s10_k2_awq epoch  15/60  loss 0.10309  val LER 0.045280
+exp_d3_r3_p0.005_s10_k2_awq epoch  16/60  loss 0.10244  val LER 0.055580
+exp_d3_r3_p0.005_s10_k2_awq epoch  17/60  loss 0.09931  val LER 0.058240
+exp_d3_r3_p0.005_s10_k2_awq epoch  18/60  loss 0.09803  val LER 0.074000
+exp_d3_r3_p0.005_s10_k2_awq epoch  19/60  loss 0.09867  val LER 0.042100
+exp_d3_r3_p0.005_s10_k2_awq epoch  20/60  loss 0.10048  val LER 0.052380
+exp_d3_r3_p0.005_s10_k2_awq epoch  21/60  loss 0.09764  val LER 0.046660
+exp_d3_r3_p0.005_s10_k2_awq epoch  22/60  loss 0.09762  val LER 0.036520
+exp_d3_r3_p0.005_s10_k2_awq epoch  23/60  loss 0.09689  val LER 0.071100
+exp_d3_r3_p0.005_s10_k2_awq epoch  24/60  loss 0.09496  val LER 0.059400
+exp_d3_r3_p0.005_s10_k2_awq epoch  25/60  loss 0.09538  val LER 0.040180
+exp_d3_r3_p0.005_s10_k2_awq epoch  26/60  loss 0.09521  val LER 0.052400
+exp_d3_r3_p0.005_s10_k2_awq epoch  27/60  loss 0.09615  val LER 0.041940
+exp_d3_r3_p0.005_s10_k2_awq epoch  28/60  loss 0.09452  val LER 0.066320
+exp_d3_r3_p0.005_s10_k2_awq epoch  29/60  loss 0.09440  val LER 0.048340
+exp_d3_r3_p0.005_s10_k2_awq epoch  30/60  loss 0.09492  val LER 0.052480
+exp_d3_r3_p0.005_s10_k2_awq epoch  31/60  loss 0.09473  val LER 0.055540
+exp_d3_r3_p0.005_s10_k2_awq epoch  32/60  loss 0.09230  val LER 0.053840
+exp_d3_r3_p0.005_s10_k2_awq epoch  33/60  loss 0.09446  val LER 0.043460
+exp_d3_r3_p0.005_s10_k2_awq epoch  34/60  loss 0.09312  val LER 0.044440
+exp_d3_r3_p0.005_s10_k2_awq epoch  35/60  loss 0.09389  val LER 0.056020
+exp_d3_r3_p0.005_s10_k2_awq epoch  36/60  loss 0.09389  val LER 0.048560
+exp_d3_r3_p0.005_s10_k2_awq epoch  37/60  loss 0.09167  val LER 0.053620
+exp_d3_r3_p0.005_s10_k2_awq epoch  38/60  loss 0.09088  val LER 0.065700
+exp_d3_r3_p0.005_s10_k2_awq epoch  39/60  loss 0.09053  val LER 0.047620
+exp_d3_r3_p0.005_s10_k2_awq epoch  40/60  loss 0.08900  val LER 0.044760
+exp_d3_r3_p0.005_s10_k2_awq epoch  41/60  loss 0.08820  val LER 0.029220
+exp_d3_r3_p0.005_s10_k2_awq epoch  42/60  loss 0.09057  val LER 0.058860
+exp_d3_r3_p0.005_s10_k2_awq epoch  43/60  loss 0.08899  val LER 0.051600
+exp_d3_r3_p0.005_s10_k2_awq epoch  44/60  loss 0.08821  val LER 0.050240
+exp_d3_r3_p0.005_s10_k2_awq epoch  45/60  loss 0.08793  val LER 0.050960
+Traceback (most recent call last):
+  File "C:\users\johna\ReedSolomon\vivado\FPGAFlow\host\train.py", line 301, in <module>
+    main()
+    ~~~~^^
+  File "C:\users\johna\ReedSolomon\vivado\FPGAFlow\host\train.py", line 275, in main
+    val_ler, best_ep = fit(model, data, epochs, lr, args.bs, wd, name, clip=args.clip)
+                       ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\users\johna\ReedSolomon\vivado\FPGAFlow\host\train.py", line 203, in fit
+    loss.backward()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\johna\AppData\Roaming\Python\Python313\site-packages\torch\_tensor.py", line 626, in backward
+    torch.autograd.backward(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        self, gradient, retain_graph, create_graph, inputs=inputs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\johna\AppData\Roaming\Python\Python313\site-packages\torch\autograd\__init__.py", line 347, in backward
+    _engine_run_backward(
+    ~~~~~~~~~~~~~~~~~~~~^
+        tensors,
+        ^^^^^^^^
+    ...<5 lines>...
+        accumulate_grad=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\johna\AppData\Roaming\Python\Python313\site-packages\torch\autograd\graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        t_outputs, *args, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )  # Calls into the C++ engine to run the backward pass
+    ^
+  File "C:\Users\johna\AppData\Roaming\Python\Python313\site-packages\torch\autograd\function.py", line 307, in apply
+    return user_fn(self, *args)
+  File "C:\users\johna\ReedSolomon\vivado\FPGAFlow\host\train.py", line 90, in backward
+    return g * (x.abs() <= 1).to(g.dtype)
+                ^^^^^^^^^^^^
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
