@@ -1,0 +1,65 @@
+$ python host/neuronexp.py --data data/d3_r3_p0.005.npz --teacher models/study/fp_d3_r3_p0.005_w128.pt --out-dir models/nexp --results results/nexp.jsonl --n-sal 12 --rank-units tiered --plain --seed 2
+salient detectors by rank [17, 6, 14, 9, 18, 5, 10, 13, 2, 1, 4, 21]; 29 dedicated neurons; xnor bits 23992
+units per rank: [[[4, 2, 1], [4, 2, 1], [2, 2], [2, 2], [1, 1]], [[4, 2, 1], [2, 2], [1, 1]], [[4, 2, 1], [2, 2], [1, 1]], [[2, 2], [1, 1]], [[2, 2], [1, 1]], [[2, 2], [1, 1]], [[2, 2], [1, 1]], [[2, 2], [1, 1]], [[2, 2], [1, 1]], [[2, 2], [1, 1]], [[2, 2], [1, 1]], [[2, 2], [1, 1]]]
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch   1/60  loss 0.25462  val LER 0.061820
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch   2/60  loss 0.13916  val LER 0.057480
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch   3/60  loss 0.11252  val LER 0.048800
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch   4/60  loss 0.10249  val LER 0.058460
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch   5/60  loss 0.10040  val LER 0.047240
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch   6/60  loss 0.10140  val LER 0.057140
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch   7/60  loss 0.10141  val LER 0.084820
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch   8/60  loss 0.10174  val LER 0.053460
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch   9/60  loss 0.10213  val LER 0.054600
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  10/60  loss 0.10192  val LER 0.048440
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  11/60  loss 0.10269  val LER 0.069840
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  12/60  loss 0.10028  val LER 0.077660
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  13/60  loss 0.10007  val LER 0.045680
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  14/60  loss 0.10027  val LER 0.080180
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  15/60  loss 0.09929  val LER 0.050320
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  16/60  loss 0.09981  val LER 0.079060
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  17/60  loss 0.09846  val LER 0.050660
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  18/60  loss 0.09738  val LER 0.057580
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  19/60  loss 0.09871  val LER 0.061520
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  20/60  loss 0.09743  val LER 0.042280
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  21/60  loss 0.09671  val LER 0.046100
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  22/60  loss 0.09648  val LER 0.071960
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  23/60  loss 0.09830  val LER 0.076660
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  24/60  loss 0.09730  val LER 0.055260
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  25/60  loss 0.09739  val LER 0.049080
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  26/60  loss 0.09520  val LER 0.049520
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  27/60  loss 0.09515  val LER 0.070820
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  28/60  loss 0.09531  val LER 0.045000
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  29/60  loss 0.09604  val LER 0.056120
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  30/60  loss 0.09430  val LER 0.035500
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  31/60  loss 0.09249  val LER 0.052880
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  32/60  loss 0.09523  val LER 0.040640
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  33/60  loss 0.09243  val LER 0.052800
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  34/60  loss 0.09261  val LER 0.069840
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  35/60  loss 0.09424  val LER 0.054960
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  36/60  loss 0.09181  val LER 0.039780
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  37/60  loss 0.09191  val LER 0.052160
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  38/60  loss 0.09221  val LER 0.063700
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  39/60  loss 0.09132  val LER 0.086220
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  40/60  loss 0.08945  val LER 0.071040
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  41/60  loss 0.08883  val LER 0.082200
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  42/60  loss 0.08951  val LER 0.038920
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  43/60  loss 0.08960  val LER 0.037760
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  44/60  loss 0.08947  val LER 0.060980
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  45/60  loss 0.08937  val LER 0.050620
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  46/60  loss 0.08718  val LER 0.061700
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  47/60  loss 0.08966  val LER 0.053440
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  48/60  loss 0.08737  val LER 0.054180
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  49/60  loss 0.08610  val LER 0.059200
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  50/60  loss 0.08612  val LER 0.044100
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  51/60  loss 0.08610  val LER 0.047620
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  52/60  loss 0.08666  val LER 0.046980
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  53/60  loss 0.08549  val LER 0.038600
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  54/60  loss 0.08422  val LER 0.044260
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  55/60  loss 0.08534  val LER 0.076620
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  56/60  loss 0.08543  val LER 0.046440
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  57/60  loss 0.08419  val LER 0.049000
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  58/60  loss 0.08451  val LER 0.052100
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  59/60  loss 0.08355  val LER 0.036080
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2 epoch  60/60  loss 0.07769  val LER 0.025280
+
+nexp_d3_r3_p0.005_n12_awq_tiered_plain_seed2: test LER 0.025842 +- 0.000159  (PyMatching 0.017178, best epoch 60, 112.1s)

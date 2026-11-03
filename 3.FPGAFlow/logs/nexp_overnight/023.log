@@ -1,0 +1,65 @@
+$ python host/neuronexp.py --data data/d3_r3_p0.005.npz --teacher models/study/fp_d3_r3_p0.005_w128.pt --out-dir models/nexp --results results/nexp.jsonl --n-sal 12 --rank-units tiered --saliency random --seed 1
+salient detectors by rank [7, 21, 2, 14, 20, 11, 4, 17, 18, 6, 13, 23]; 29 dedicated neurons; xnor bits 24025
+units per rank: [[[4, 2, 1], [4, 2, 1], [2, 2], [2, 2], [1, 1]], [[4, 2, 1], [2, 2], [1, 1]], [[4, 2, 1], [2, 2], [1, 1]], [[2, 2], [1, 1]], [[2, 2], [1, 1]], [[2, 2], [1, 1]], [[2, 2], [1, 1]], [[2, 2], [1, 1]], [[2, 2], [1, 1]], [[2, 2], [1, 1]], [[2, 2], [1, 1]], [[2, 2], [1, 1]]]
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch   1/60  loss 0.23176  val LER 0.068860
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch   2/60  loss 0.13463  val LER 0.077500
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch   3/60  loss 0.10874  val LER 0.052000
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch   4/60  loss 0.10283  val LER 0.063480
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch   5/60  loss 0.10012  val LER 0.046400
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch   6/60  loss 0.10107  val LER 0.062460
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch   7/60  loss 0.10261  val LER 0.070300
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch   8/60  loss 0.10094  val LER 0.041860
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch   9/60  loss 0.10124  val LER 0.065700
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  10/60  loss 0.10036  val LER 0.056780
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  11/60  loss 0.10015  val LER 0.061300
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  12/60  loss 0.09864  val LER 0.049840
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  13/60  loss 0.09604  val LER 0.079600
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  14/60  loss 0.09623  val LER 0.053960
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  15/60  loss 0.09647  val LER 0.036300
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  16/60  loss 0.09624  val LER 0.058940
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  17/60  loss 0.09496  val LER 0.065000
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  18/60  loss 0.09492  val LER 0.035620
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  19/60  loss 0.09517  val LER 0.079320
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  20/60  loss 0.09451  val LER 0.036940
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  21/60  loss 0.09430  val LER 0.040240
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  22/60  loss 0.09518  val LER 0.038060
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  23/60  loss 0.09139  val LER 0.041260
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  24/60  loss 0.09110  val LER 0.068300
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  25/60  loss 0.09273  val LER 0.058980
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  26/60  loss 0.09382  val LER 0.052580
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  27/60  loss 0.09228  val LER 0.058260
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  28/60  loss 0.09143  val LER 0.057920
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  29/60  loss 0.09059  val LER 0.053700
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  30/60  loss 0.09197  val LER 0.060520
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  31/60  loss 0.09023  val LER 0.048260
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  32/60  loss 0.09254  val LER 0.040280
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  33/60  loss 0.08847  val LER 0.056820
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  34/60  loss 0.09125  val LER 0.033020
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  35/60  loss 0.08967  val LER 0.045400
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  36/60  loss 0.08761  val LER 0.032640
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  37/60  loss 0.08770  val LER 0.048380
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  38/60  loss 0.08745  val LER 0.047560
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  39/60  loss 0.08725  val LER 0.064040
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  40/60  loss 0.08828  val LER 0.068140
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  41/60  loss 0.08775  val LER 0.068180
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  42/60  loss 0.08678  val LER 0.079640
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  43/60  loss 0.08637  val LER 0.037240
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  44/60  loss 0.08477  val LER 0.036460
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  45/60  loss 0.08669  val LER 0.039340
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  46/60  loss 0.08607  val LER 0.066660
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  47/60  loss 0.08389  val LER 0.056140
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  48/60  loss 0.08502  val LER 0.030360
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  49/60  loss 0.08449  val LER 0.038140
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  50/60  loss 0.08395  val LER 0.041100
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  51/60  loss 0.08369  val LER 0.073860
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  52/60  loss 0.08472  val LER 0.042700
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  53/60  loss 0.08374  val LER 0.041280
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  54/60  loss 0.08136  val LER 0.036720
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  55/60  loss 0.08240  val LER 0.037940
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  56/60  loss 0.08057  val LER 0.049860
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  57/60  loss 0.08147  val LER 0.050220
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  58/60  loss 0.08021  val LER 0.030300
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  59/60  loss 0.07831  val LER 0.033920
+nexp_d3_r3_p0.005_n12_random_tiered_seed1 epoch  60/60  loss 0.07564  val LER 0.028000
+
+nexp_d3_r3_p0.005_n12_random_tiered_seed1: test LER 0.029051 +- 0.000168  (PyMatching 0.017178, best epoch 60, 130.7s)

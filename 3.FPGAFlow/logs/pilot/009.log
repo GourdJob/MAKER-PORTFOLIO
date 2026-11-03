@@ -1,0 +1,23 @@
+$ python host/train.py --data data/10m/d3_r3_p0.005.npz --model bnn --epochs 20 --lr 1e-3 --out-dir models/pilot --teacher models/10m/fp_d3_r3_p0.005_d10m.pt --tag d10m_e20_lr1e-3 --results results/pilot.jsonl
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch   1/20  loss 0.13461  val LER 0.062396
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch   2/20  loss 0.11690  val LER 0.064188
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch   3/20  loss 0.11585  val LER 0.064850
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch   4/20  loss 0.11628  val LER 0.070964
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch   5/20  loss 0.11784  val LER 0.070330
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch   6/20  loss 0.11723  val LER 0.079202
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch   7/20  loss 0.11743  val LER 0.088734
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch   8/20  loss 0.11738  val LER 0.052824
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch   9/20  loss 0.11593  val LER 0.048488
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch  10/20  loss 0.11429  val LER 0.054900
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch  11/20  loss 0.11391  val LER 0.060178
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch  12/20  loss 0.11338  val LER 0.070646
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch  13/20  loss 0.11101  val LER 0.049816
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch  14/20  loss 0.11046  val LER 0.079240
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch  15/20  loss 0.10857  val LER 0.059660
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch  16/20  loss 0.10768  val LER 0.059500
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch  17/20  loss 0.10653  val LER 0.045042
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch  18/20  loss 0.10571  val LER 0.093680
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch  19/20  loss 0.10389  val LER 0.038016
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3 epoch  20/20  loss 0.10021  val LER 0.035232
+
+bnn_d3_r3_p0.005_d10m_e20_lr1e-3: test LER 0.035182 +- 0.000184  (PyMatching 0.017178, best epoch 20, 203.6s)

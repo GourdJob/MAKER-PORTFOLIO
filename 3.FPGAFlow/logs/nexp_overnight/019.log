@@ -1,0 +1,65 @@
+$ python host/neuronexp.py --data data/d3_r3_p0.005.npz --teacher models/study/fp_d3_r3_p0.005_w128.pt --out-dir models/nexp --results results/nexp.jsonl --n-sal 12  --seed 1
+salient detectors by rank [17, 6, 14, 9, 18, 5, 10, 13, 2, 1, 4, 21]; 60 dedicated neurons; xnor bits 28776
+units per rank: [[[1, 1], [1, 1], [2, 2], [2, 2], [4, 2, 1]], [[1, 1], [1, 1], [2, 2], [2, 2], [4, 2, 1]], [[1, 1], [1, 1], [2, 2], [2, 2], [4, 2, 1]], [[1, 1], [1, 1], [2, 2], [2, 2], [4, 2, 1]], [[1, 1], [1, 1], [2, 2], [2, 2], [4, 2, 1]], [[1, 1], [1, 1], [2, 2], [2, 2], [4, 2, 1]], [[1, 1], [1, 1], [2, 2], [2, 2], [4, 2, 1]], [[1, 1], [1, 1], [2, 2], [2, 2], [4, 2, 1]], [[1, 1], [1, 1], [2, 2], [2, 2], [4, 2, 1]], [[1, 1], [1, 1], [2, 2], [2, 2], [4, 2, 1]], [[1, 1], [1, 1], [2, 2], [2, 2], [4, 2, 1]], [[1, 1], [1, 1], [2, 2], [2, 2], [4, 2, 1]]]
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch   1/60  loss 0.20082  val LER 0.053180
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch   2/60  loss 0.12075  val LER 0.066820
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch   3/60  loss 0.10182  val LER 0.040400
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch   4/60  loss 0.09205  val LER 0.057200
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch   5/60  loss 0.09161  val LER 0.040000
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch   6/60  loss 0.09410  val LER 0.061680
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch   7/60  loss 0.09054  val LER 0.038740
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch   8/60  loss 0.09084  val LER 0.041100
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch   9/60  loss 0.08895  val LER 0.041100
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  10/60  loss 0.09013  val LER 0.054420
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  11/60  loss 0.08984  val LER 0.043940
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  12/60  loss 0.08924  val LER 0.032340
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  13/60  loss 0.08550  val LER 0.042280
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  14/60  loss 0.08725  val LER 0.042940
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  15/60  loss 0.08691  val LER 0.042400
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  16/60  loss 0.08686  val LER 0.054660
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  17/60  loss 0.08511  val LER 0.035760
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  18/60  loss 0.08622  val LER 0.039500
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  19/60  loss 0.08633  val LER 0.065540
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  20/60  loss 0.08444  val LER 0.037600
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  21/60  loss 0.08636  val LER 0.050340
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  22/60  loss 0.08343  val LER 0.042240
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  23/60  loss 0.08650  val LER 0.064660
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  24/60  loss 0.08516  val LER 0.048560
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  25/60  loss 0.08423  val LER 0.038480
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  26/60  loss 0.08400  val LER 0.060720
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  27/60  loss 0.08255  val LER 0.065520
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  28/60  loss 0.08271  val LER 0.034660
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  29/60  loss 0.08348  val LER 0.036740
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  30/60  loss 0.08236  val LER 0.045600
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  31/60  loss 0.08090  val LER 0.028200
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  32/60  loss 0.08180  val LER 0.033740
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  33/60  loss 0.08244  val LER 0.042980
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  34/60  loss 0.08036  val LER 0.067360
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  35/60  loss 0.08163  val LER 0.035520
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  36/60  loss 0.07983  val LER 0.053900
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  37/60  loss 0.08031  val LER 0.034740
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  38/60  loss 0.07921  val LER 0.030720
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  39/60  loss 0.08025  val LER 0.034000
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  40/60  loss 0.07955  val LER 0.036000
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  41/60  loss 0.07785  val LER 0.026260
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  42/60  loss 0.07756  val LER 0.037200
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  43/60  loss 0.07911  val LER 0.043700
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  44/60  loss 0.07726  val LER 0.031440
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  45/60  loss 0.07622  val LER 0.033620
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  46/60  loss 0.07657  val LER 0.048200
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  47/60  loss 0.07769  val LER 0.039900
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  48/60  loss 0.07648  val LER 0.029720
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  49/60  loss 0.07652  val LER 0.026880
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  50/60  loss 0.07541  val LER 0.031140
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  51/60  loss 0.07554  val LER 0.029560
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  52/60  loss 0.07604  val LER 0.032680
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  53/60  loss 0.07527  val LER 0.028600
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  54/60  loss 0.07345  val LER 0.028180
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  55/60  loss 0.07362  val LER 0.031580
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  56/60  loss 0.07482  val LER 0.040520
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  57/60  loss 0.07345  val LER 0.026020
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  58/60  loss 0.07421  val LER 0.026580
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  59/60  loss 0.07173  val LER 0.029020
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1 epoch  60/60  loss 0.06807  val LER 0.022040
+
+nexp_d3_r3_p0.005_n12_awq_uniform_seed1: test LER 0.022385 +- 0.000148  (PyMatching 0.017178, best epoch 60, 135.2s)

@@ -1,0 +1,11 @@
+0.7
+2020.2
+Jun 16 2026
+11:10:11
+C:/Users/johna/ReedSolomon/vivado/FPGAFlow/rtl/bnn_engine.v,1793322021,verilog,,C:/Users/johna/ReedSolomon/vivado/FPGAFlow/rtl/top.v,,bnn_engine,,,,,,,,
+C:/Users/johna/ReedSolomon/vivado/FPGAFlow/rtl/cmd_parser.v,1793322200,verilog,,C:/Users/johna/ReedSolomon/vivado/FPGAFlow/rtl/bnn_engine.v,,cmd_parser,,,,,,,,
+C:/Users/johna/ReedSolomon/vivado/FPGAFlow/rtl/top.v,1793322093,verilog,,C:/Users/johna/ReedSolomon/vivado/FPGAFlow/sim/tb_top.v,,top,,,,,,,,
+C:/Users/johna/ReedSolomon/vivado/FPGAFlow/rtl/uart_rx.v,1793322021,verilog,,C:/Users/johna/ReedSolomon/vivado/FPGAFlow/rtl/uart_tx.v,,uart_rx,,,,,,,,
+C:/Users/johna/ReedSolomon/vivado/FPGAFlow/rtl/uart_tx.v,1793322021,verilog,,C:/Users/johna/ReedSolomon/vivado/FPGAFlow/rtl/cmd_parser.v,,uart_tx,,,,,,,,
+C:/Users/johna/ReedSolomon/vivado/FPGAFlow/sim/tb_engine.v,1793322093,verilog,,,,tb_engine,,,,,,,,
+C:/Users/johna/ReedSolomon/vivado/FPGAFlow/sim/tb_top.v,1793322162,verilog,,,,tb_top,,,,,,,,

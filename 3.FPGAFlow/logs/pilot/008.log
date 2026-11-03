@@ -1,0 +1,23 @@
+$ python host/train.py --data data/10m/d3_r3_p0.005.npz --model bnn --epochs 20 --out-dir models/pilot --teacher models/10m/fp_d3_r3_p0.005_d10m.pt --tag d10m_e20 --seed 1 --results results/pilot.jsonl
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch   1/20  loss 0.12567  val LER 0.067992
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch   2/20  loss 0.11563  val LER 0.058144
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch   3/20  loss 0.11757  val LER 0.063928
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch   4/20  loss 0.11358  val LER 0.046792
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch   5/20  loss 0.11393  val LER 0.074668
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch   6/20  loss 0.11392  val LER 0.057366
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch   7/20  loss 0.11338  val LER 0.105868
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch   8/20  loss 0.11164  val LER 0.060376
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch   9/20  loss 0.11125  val LER 0.052732
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch  10/20  loss 0.10939  val LER 0.045522
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch  11/20  loss 0.10809  val LER 0.046050
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch  12/20  loss 0.10560  val LER 0.058656
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch  13/20  loss 0.10385  val LER 0.054794
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch  14/20  loss 0.10324  val LER 0.058330
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch  15/20  loss 0.10167  val LER 0.046978
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch  16/20  loss 0.10163  val LER 0.057438
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch  17/20  loss 0.09962  val LER 0.056640
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch  18/20  loss 0.09978  val LER 0.061532
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch  19/20  loss 0.09822  val LER 0.053956
+bnn_d3_r3_p0.005_d10m_e20_seed1 epoch  20/20  loss 0.09507  val LER 0.033902
+
+bnn_d3_r3_p0.005_d10m_e20_seed1: test LER 0.033321 +- 0.000179  (PyMatching 0.017178, best epoch 20, 202.5s)

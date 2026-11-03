@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/johna/ReedSolomon/vivado/FPGAFlow/rtl/bnn_engine.v" into library work
+INFO: [VRFC 10-311] analyzing module bnn_engine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/johna/ReedSolomon/vivado/FPGAFlow/sim/tb_engine.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_engine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/johna/ReedSolomon/vivado/FPGAFlow/sim/work_nexp/tbw.v" into library work
+INFO: [VRFC 10-311] analyzing module tbw

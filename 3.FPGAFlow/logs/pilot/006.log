@@ -1,0 +1,9 @@
+$ python host/train.py --data data/10m/d3_r3_p0.005.npz --model bnn --epochs 6 --out-dir models/pilot --teacher models/10m/fp_d3_r3_p0.005_d10m.pt --tag d10m_e6 --seed 1 --results results/pilot.jsonl
+bnn_d3_r3_p0.005_d10m_e6_seed1 epoch   1/6  loss 0.12716  val LER 0.068644
+bnn_d3_r3_p0.005_d10m_e6_seed1 epoch   2/6  loss 0.11848  val LER 0.050692
+bnn_d3_r3_p0.005_d10m_e6_seed1 epoch   3/6  loss 0.11694  val LER 0.078002
+bnn_d3_r3_p0.005_d10m_e6_seed1 epoch   4/6  loss 0.11141  val LER 0.068800
+bnn_d3_r3_p0.005_d10m_e6_seed1 epoch   5/6  loss 0.10539  val LER 0.057192
+bnn_d3_r3_p0.005_d10m_e6_seed1 epoch   6/6  loss 0.09989  val LER 0.032706
+
+bnn_d3_r3_p0.005_d10m_e6_seed1: test LER 0.032603 +- 0.000178  (PyMatching 0.017178, best epoch 6, 66.7s)

@@ -1,0 +1,6 @@
+skipping 7 jobs already completed
+[1/83   1.1 min] #1 ok: python host/neuronexp.py --data data/d3_r3_p0.005.npz --teacher models/study/fp_d3_r3_p0.005_w128.pt --out-dir models/nexp --results results/nexp.jsonl --n-sal 6  --saliency random --seed 0
+[2/83   2.1 min] #2 ok: python host/neuronexp.py --data data/d3_r3_p0.005.npz --teacher models/study/fp_d3_r3_p0.005_w128.pt --out-dir models/nexp --results results/nexp.jsonl --n-sal 6  --plain --seed 0
+[3/83   3.1 min] #3 ok: python host/neuronexp.py --data data/d3_r3_p0.005.npz --teacher models/study/fp_d3_r3_p0.005_w128.pt --out-dir models/nexp --results results/nexp.jsonl --n-sal 6 --rank-units tiered --seed 0
+[4/83   4.2 min] #4 ok: python host/neuronexp.py --data data/d3_r3_p0.005.npz --teacher models/study/fp_d3_r3_p0.005_w128.pt --out-dir models/nexp --results results/nexp.jsonl --n-sal 6 --rank-units tiered --saliency random --seed 0
+[5/83   5.2 min] #5 ok: python host/neuronexp.py --data data/d3_r3_p0.005.npz --teacher models/study/fp_d3_r3_p0.005_w128.pt --out-dir models/nexp --results results/nexp.jsonl --n-sal 6 --rank-units tiered --plain --seed 0
