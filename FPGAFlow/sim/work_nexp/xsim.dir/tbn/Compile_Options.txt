@@ -1,1 +1,0 @@
-"tbw" -s "tbn" -debug "off" 

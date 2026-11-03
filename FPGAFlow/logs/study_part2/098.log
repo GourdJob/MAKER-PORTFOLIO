@@ -1,1 +1,0 @@
-$ python host/train.py --data data/d3_r3_p0.005.npz --model expanded --hidden 128 128 --teacher models/study/fp_d3_r3_p0.005_w128.pt --kd 0.5 --out-dir models/study --results results/study.jsonl --tag L0n1 --seed 3 --k 3 --salient-layers 0.041667 0 0 --saliency inverse
